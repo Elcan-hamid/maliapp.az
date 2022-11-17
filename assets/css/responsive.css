@@ -1,0 +1,771 @@
+@media screen and (max-height: 644px){
+	.payment-modal .modal-content{
+		max-height: 550px;
+	}
+}
+
+@media screen and (min-height: 910px){
+	.side-menu{
+		margin-top: 120px;
+	}
+	.bottom-menu{
+		margin-top: 170px;
+	}
+
+	.statistic-area{
+		margin-top: 135px !important;
+	}
+	.continue-btn{
+		margin-top: 175px;
+	}
+}
+
+@media screen and (max-width: 548px){
+
+	.contract-name{
+		flex-direction: column;
+	}
+	.correct{ 
+		padding-left: 0;
+		padding-top: 20px;
+	}
+	.overlay .container{
+		padding: 20px 0;
+	}
+	.income{
+		padding: 20px !important;
+	}
+	.premium-packet .packet-content ul li,
+	.packet-container ul li{
+    	flex-direction: column;
+    	align-items: flex-start;
+    }
+    .packet-content ul li span{
+    	margin-left: 30px;
+    	border-radius: 20px;
+    	margin-top: 10px;
+    	width: 112px;
+    	text-align: center;
+    }
+    .remove-hidden{
+    	display: none;
+    }
+    .animation-images img{
+    	height: 320px;
+    	width: 350px;
+    }
+    .animationNav{
+    	padding: 36.6px 14px 30.2px 14.6px !important;
+    	right: -70px !important;
+    	bottom: -20% !important;
+    }
+    .side-menu{
+    	margin-top: 40px !important;
+    }
+    .card-container{
+    	padding: 25px 30px;
+    }
+    
+    .success-text{
+    	width: 90% !important;
+    }
+    .popup-content{
+    	padding-left: 20px !important;
+    	max-width: 380px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+	.email-content{
+		width: 850px;
+	}
+	#settings .card-link{
+		max-width: 80%;
+		padding: 23px 25px 0px 24px !important;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.sidenav{
+		display: none;
+	}
+	.title-mobile-area{
+		display: block;
+	}
+	.menu-container,
+	.free-trial{
+		display: none;
+	}
+	section{
+		margin: 80px 30px;
+	}	
+	.title-mobile-area .section-title{
+		margin-left: 30px;
+	}
+	.landing-sidenav .menu-item{
+		justify-content: center;
+	}
+	.landing-sidenav .menu-active .menu-item{
+		color: var(--main-color);
+		font-weight: bold;
+	}
+	.landing-img{
+		width: 100%;
+	}
+
+	.mobile-sidenav .menu-item{
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 600;
+		padding-right: 40px;
+	}
+	.mobile-sidenav .menu-active img{
+		filter: invert(56%) sepia(91%) saturate(394%) hue-rotate(112deg) brightness(94%) contrast(79%);
+	}
+	.fixed-header{
+		position: fixed;
+		top: 0;
+		left: 0;	
+		z-index: 200;
+		background-color: #fff;
+		padding: 15px 23px 10px;
+		width: 100%;
+	}
+	.title-area{
+		display: none !important;
+	}
+	.title-mobile-area nav{
+		position: fixed;
+		top: 85px;
+		right: -50px;
+		width: 0%;
+		background-color: #fff;
+		height: 100vh;
+		padding: 40px 23px;
+		transition: 0.5s;
+	}
+	.toggle{
+		width: 100% !important;
+		right: 0 !important;
+	}
+	.notification_dropdown .dropdown-menu-right{
+		margin-right: 0;
+	}
+	.overlay{
+		top: 120px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+	.sidenav{
+		min-width: 250px;
+	}
+	section{
+		margin: 50px 50px auto 300px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+	.mobile-sidenav .menu-link{
+		font-size: 18px;
+	}
+	.mobile-sidenav .menu-link .sidebar-svg{
+		height: 26px;
+		width: 30px;
+	}
+	.mobile-sidenav .menu-item{
+		padding: 15px 0;
+	}
+	.mobile-sidenav .menu-item span{
+		margin-left: 30px !important;
+	}
+	.landing-sidenav .menu-item span{
+		margin-right: -20px;
+	}
+	.container{
+		padding: 0 20px;
+	}
+	.title-mobile-area .section-title{
+		margin-top: 130px;
+		margin-bottom: -30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.table{
+		width: 60rem;
+	}
+	.table-responsive-md{
+		overflow-x: scroll !important;
+	}
+	.hesab-faktura .flex-wrap{
+		flex-wrap: nowrap !important;
+	}
+	.contract-popup{
+		width: 70%;
+	}
+	.support-image-container, .blog-image-container{
+		width: 80%;
+	}
+	.support-content, .blog-content{
+		width: 80%;
+		padding-right: 0;
+	}
+	.scroll-section{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.statistic-area.mobile{
+		display: block;
+	}
+	.statistic-area{
+		display: none;
+	}
+	.animation-section .container .d-flex{
+		flex-direction: column !important;
+	}	
+	.scroll-section{
+		order: 2;
+		text-align: center;
+		margin-left: 70px;
+		margin-top: 90px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.support-content,
+	.blog-content {
+		padding-right: 0px;
+		margin-left: 50px;
+	}
+	.animationNav{
+		right: -10%;
+	}
+	.animation-area{
+		flex: 1;
+	}
+	.scroll-section{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.charts .select_wrap{
+		width: 100%;
+		border: 1px solid #ecf1f4;
+		padding-left: 15px;
+	}
+	.best-static{
+		border-bottom: none;
+	}
+	
+	.popup-content{
+		padding-left: 30px;
+	}
+	#muqavile-popup .popup-content{
+		max-width: 470px;
+	}
+	
+}
+
+@media screen and (max-width: 768px){
+
+	.line-right{
+		border: none;
+	}
+
+	.mobile-sidenav .menu-item span{
+		margin-left: 25px !important;
+	}
+
+	.landing-sidenav .menu-item span{
+		margin-right: -20px;
+	}
+
+	.pt-190{
+		padding-top: 60px;
+	}
+
+	h1{
+		font-size: 28px;
+	}
+
+	.landing-title{
+		display: none;
+	}
+
+	.landing-page-header {
+		padding: 20px 0;
+		background-color: #fafbfc;
+		box-shadow: none !important;
+	}
+
+	.main-content #none{
+		display: none;
+	}
+
+	.side-menu{
+		margin-top: 80px;
+	}
+
+	.main-content .landing-img{
+		height: 350px;
+		width: 100%;
+		object-position: left;
+		margin-top: 40px;
+		margin-bottom: 104px;
+	}
+
+	.login-signup{
+		order: 3;
+	}
+	.login-signup button{
+		width: 169px;
+		height: 62px;
+		border-radius: 40px;
+	}
+	.login-signup button:first-child{
+		margin-right: 10px;
+	}
+
+	.scroll-section{
+		width: 98%;
+	}
+
+	.scroll-section h3{
+		line-height: 1.6;
+	}
+
+	.animation-area{
+		margin-top: 80px;
+		margin-bottom: 30px;
+	}
+
+	.animation-images,
+	.anime-bg{
+		width: 100%;
+	}
+
+	.video-content{
+		height: 215px;
+	}
+
+	.video-content span{
+		height: 50px;
+		width: 50px;
+	}
+	.video-content .play-icon{
+		height: 50px;
+		width: 50px;
+		padding-left: 5px;
+	}
+
+	.animationNav{
+		padding: 36.6px 24px 40.2px 24.6px;
+		right: -50px;
+		bottom: -15%;
+		width: 260px;
+	}
+
+	.animationNav .menu-logo img{
+		width: 60%;
+		margin-left: 20px;
+	}
+
+	#slickCarousel {
+		display: block;
+	}
+
+	.cards-desktop {
+		display: none;
+	}
+
+	.modal.left .modal-dialog{
+		/*right: 0;*/
+		left: 0;
+		width: 100%;
+		margin-left: 0 !important;
+	}
+
+	.modal.left .modal-content{
+		width: 100vw;
+		margin-top: 0;
+	}
+	.sign-up-content, .sign-in-content, .forgotPassword, .updatePassword{
+		padding: 30px 5% 10% 5%;
+	}
+
+	.name{
+		font-size: 20px !important;
+	}
+	section{
+		margin: 30px 23px;
+	}
+	.table-responsive-md{
+		background-color: #fff;
+	}
+	.currency,
+	.incomeBuyerCosts{
+		margin-bottom: 10px;
+		padding: 20px 21px 10px 22px !important;
+	}
+	.invoice-header,
+	.tax-header,
+	.best-static{
+		flex-direction: column;
+	}
+	.best-static input[type="date"]{
+		width: 100%;
+		margin-top: 5px;
+	}
+	.invoice-header-mobile{
+		order: 1;
+	}
+	.contracts-history .dropdown,
+	.tax-history .dropdown{
+		order: 1;
+	}
+	.contracts-history .dropdown-toggle,
+	.tax-history .dropdown-toggle{
+		width: 100% !important;
+		background-color: #fff !important;
+		margin-bottom: 12px;
+		box-shadow: none !important;
+	}
+	.invoice-header-mobile.contracts-history{
+		margin: 20px 0;
+	}
+	.contracts{
+		margin-bottom: 10px;
+	}
+	.contracts-header{
+		flex-direction: column;
+	}
+	.search-box{
+		order: 0;
+		margin-bottom: 10px;
+	}
+	.search-input{
+		width: 100% !important;
+	}
+	.contract-popup{
+		width: 100%;
+	}
+	.mobile-cashFlow{
+		display: block;
+	}
+	.logo-area img{
+		width: 90%;
+	}
+	.notification_dropdown .dropdown-menu-right{
+		margin-right: 0;
+		padding: 2px 0 18px 4px;
+		font-size: 14px;
+	}
+	.invoice-header-pills{
+		display: none !important;
+	}
+	.invoice-header-mobile{
+		display: block;
+	}
+	.font-22{
+		font-size: 20px !important;
+	}
+	.table{
+		min-width: 60rem;
+	}
+	.section-title{
+		margin-top: 130px;
+	}
+	.statistic-area .block-img{
+		margin-bottom: 20px;
+		height: 102px;
+		width: 102px;
+	}
+	.statistic-area .block{
+		padding-top: 28px;
+		padding-bottom: 28px;
+		margin-bottom: 10px;
+	}
+	.statistic-area .block:hover{
+		padding-top: 27px;
+		padding-bottom: 28px;
+	}
+	.statistic-area .block.block-active{
+		padding-top: 28px;
+	}
+	.paid-and-expected .col-md-6:last-child{
+		padding-left: 0;
+		padding-right: 15px !important;
+		margin-top: 40px;
+	}
+	.card
+	{
+		padding: 14px 14.2px 43px 14.8px !important;
+		margin-top: 20px;
+	}
+	.question-tab input[type="radio"]{
+		appearance: none;
+		-webkit-appearance: none;
+		border: none !important;
+		background: transparent !important;
+	}
+	.question-tab input[type="radio"]:checked:after,
+	.question-tab .option .check-icon{
+		display: none;
+	}
+	.question-tab .card{
+		padding: 36px 23px 35px 23px !important; 
+		max-height: 100% !important;
+	}
+	.question-tab .option{
+		padding: 17px 15.5px 18px 15px;
+	}
+	.card-report{
+		margin-top: 20px;
+		padding: 15px 14.4px 15px 15px !important;
+	}
+	.card .alert p{
+		display: none;
+	}
+	.card .alert h5
+	{
+		margin-top: 15px;
+		font-size: 17px;
+		margin-left: -10px;
+	}
+	.card-report .alert h5{
+		margin-left: -10px;
+	}
+	.card-report .px-4{
+		padding: 0 !important;
+	}
+	.container{
+		padding: 0 20px !important;
+	}
+	.logo-area .container{
+		flex-direction: column;
+	}
+	.logo-area .foto-icon{
+		height: 93px;
+		width: 93px;
+	}
+	.logo-area .foto-icon img{
+		height: 27.9px;
+		width: 25.1px;
+	}
+	.logo-area .foto-content{
+		text-align: center;
+		margin-top: 25px;
+	}
+	.total-amount{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.preview-btn{
+		margin-top: 17px;
+		margin-left: 10px;
+		order: 1;
+	}
+	.preview-btns{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.modal-content{
+		padding: 15px 25px 38px;
+		width: 380px;
+		margin: 40px 0px;
+	}
+	.modal-content .form-group{
+		margin-bottom: 25px;
+	}
+	.modal-content .mali-btn{
+		margin: 0 auto;
+	}
+	.modal-content .close-btn{
+		top: -15px;
+		right: -15px;
+		background-color: var(--light-cyan);
+		padding: 11.2px 11.5px 11.2px 11px;
+		height: 34px;
+		width: 34px;
+		z-index: 20;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mobile-sidenav .menu-link{
+		cursor: pointer;
+		margin: 5px 0;
+		font-size: 15px;
+	}
+	.mobile-sidenav .menu-item{
+		/*height: 22px;*/ /*bunlar silindi*/
+		padding-top: 18px; /*deyisdi*/
+		padding-bottom: 18px; /*deyisdi*/
+		/*margin: 10px 0;*/ /*bunlar silindi*/
+	}
+
+	#pricePackages .hidden{
+		display: flex !important;
+	}
+	.mobile-hidden{
+		display: none;
+	}
+	.chosing-card{
+		background-color: #f7f9fc;
+		padding: 9px;
+		width: 60%;
+		height: 64px;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+	.chosing-card li{
+		width: 48%;
+		border-radius: 5px;
+	}
+	.chosing-card li a{
+		font-size: 15px;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 12px 15px;
+		border-radius: 5px;
+	}
+	.chosing-card .card-active{
+		background-color: var(--main-color);
+		color: #fff;
+	}
+	#pricePackages .nav-pills .nav-link.active{
+		background-color: var(--main-color) !important;
+	}
+
+	.invoice-history .dropdown-menu{
+		margin-right: 0;
+	}
+	.incomeBuyer{
+		flex-direction: column;
+	}
+	.incomeBuyer input[type="date"]{
+		width: 100%
+	}
+	.incomeBuyer .pdf,
+	.hidden-cashFlow{
+		display: none;
+	}
+	.incomeBuyerCosts{
+		padding: 0 41px;
+	}
+	.pdf-mobile{
+		display: block;
+		background-color: #fff;
+	}
+	.cash-line .flex-row{
+		flex-direction: column !important;
+	}
+	.cash-line .flex-row span,
+	.cashFlowLine .flex-row span{
+		margin-bottom: 10px;
+	}
+	.calculate-btn{
+		background-color: var(--light-gray);
+		color: inherit;
+		font-weight: 500;
+	}
+	.show-more-tax button{
+		background-color: var(--main-color);
+		color: #fff;
+	}
+	.mobile-cashFlow ul{
+		/*margin-top: 10px;*/
+	}
+	.mobile-cashFlow ul li{
+		/*margin-bottom: 10px;*/
+	}
+	.tarixce-edit{
+		display: none !important;
+	}
+	.hesab-faktura h5{
+		font-size: 15px;
+	}
+	.hesab-faktura .mali-btn{
+		margin-left: 25px;
+		margin-top: 10px;
+	}
+	.invoiceSent div{
+		margin: 10px 0;
+	}
+	#sent{
+		padding: 0px !important;
+	}
+	#paid .pl-5{
+		padding-left: 10px !important;
+	}
+	.notification{
+		text-align: center !important;
+	}
+	.dropdownn {
+        position: relative;
+        width: 100%;
+        color: #09101a;
+    }
+    .premium-packet{
+    	padding-bottom: 90px;
+    }
+    .premium-packet h3{
+    	font-size: 22px !important;	
+    }
+    .premium-packet .card{
+		padding: 30px 25px 38px 25px !important;
+    }
+    .premium-packet .card .packet-header{
+    	height: 90px;
+    }
+
+    .premium-packet .card .card-btn{
+    	margin-top: 60px;
+    }
+    .blog-pages-image img{
+    	height: 262px;
+    }
+    .blog-pages-content{
+    	width: 100%;
+    }
+    .blog-content-container .row{
+    	padding-top: 50px;
+    	padding-bottom: 70px;
+    }
+    .support-image-container, .blog-image-container{
+		width: 100%;
+	}
+	.support-content, .blog-content{
+		width: 100%;
+		padding-right: 0;
+	}
+    .footer-area{
+    	flex-direction: column !important;
+    	align-items: flex-start !important;
+    }
+    .footer-logo{
+    	display: flex;
+    	flex-direction: column;
+    }
+    .footer-logo img{
+    	width: 70% !important;
+    }
+    .footer-logo span{
+    	margin-left: 0 !important;
+    }
+    .footer-logo > *{
+    	margin: 10px 0;
+    }
+    .social-icons{
+    	margin-top: 20px;
+    }
+}

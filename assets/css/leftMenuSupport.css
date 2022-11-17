@@ -1,0 +1,29 @@
+@media screen and (min-height: 650px) and (max-height: 710px){
+  .sidenav .menu-link a{
+    padding: 24px 16px!important;
+  }
+}
+
+@media screen and (min-height: 600px) and (max-height: 649px){
+  .sidenav .menu-link a{
+    padding: 20px 16px!important;
+  }
+}
+
+@media screen and (min-height: 550px) and (max-height: 599px){
+  .sidenav .menu-link a{
+    padding: 17px 16px!important;
+  }
+}
+
+@media screen and (min-height: 500px) and (max-height: 549px){
+  .sidenav .menu-link a{
+    padding: 14px 16px!important;
+  }
+}
+
+@media screen and (max-height: 500px){
+  .sidenav .menu-link a{
+    padding: 12px 16px!important;
+  }
+}

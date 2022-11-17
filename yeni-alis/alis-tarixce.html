@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mali App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+    <div class="sidenav">
+        <div class="menu-logo">
+            <a href=""><img src="../assets/images/maliapp-logo.svg"></a>
+        </div>
+        <div class="navbar-menu">
+            <div class="side-menu">
+                <ul>
+                    <li class="menu-link">
+                        <a href="statistika.html" class="menu-item">
+                            <img src="../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+                            <span class="ml-2">Statistika</span>
+                        </a>
+                    </li>
+                    <li class="menu-link menu-link-active">
+                        <a href="alis-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+                            <span class="ml-2">Alış fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="hesab-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesab-fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="muqavileler.html" class="menu-item">
+                            <img src="../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+                            <span class="ml-2">Müqavilələr</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="vergi.html" class="menu-item">
+                            <img src="../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+                            <span class="ml-2">Vergi hesablayıcısı</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="hesabatlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesabatlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li class="menu-link">
+                        <a href="ayarlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/setting.svg" class="sidebar-svg">
+                            <span class="ml-2">Ayarlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-mobile-area">
+        <div class="">
+            <div class="fixed-header d-flex justify-content-between align-items-center">
+                <div class="logo-area">
+                    <img src="../assets/images/maliapp-logo.svg">
+                </div>
+                <ul class="header-mobile-right d-flex align-items-center">
+                    <li class="nav-item dropdown notification_dropdown mr-2">
+                        <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+                            <img src="../assets/images/bell.svg">
+                            <div class="pulse-css rounded-circle"></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="list-unstyled">
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                        🎉
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>MaliApp yeniləndi!</div>
+                                        <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                        <img src="../assets/images/notify-hesab.svg">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>Hesab-faktura</div>
+                                        <div>12345678 nömrəli hesab-faktura gecikir</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+
+                    <div class="mobile-navbar">
+                        <div class="menu-buttons">
+                            <a class="menu"><img src="../assets/images/menu.svg"></a>
+                            <a class="close-menu hidden"><img src="../assets/images/close-menu.svg"></a>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </div>
+            <nav>
+                <div class="avatar-img changeArrowHover d-flex" style="border-bottom: 1px solid #f2f2f2;padding-bottom: 20px;">
+                    <p class="text-white font-weight-bold">FA</p>
+                    <span class="mt-3 ml-2">Fuad Aliyev</span>
+                </div>
+                <ul class="mobile-sidenav mt-3 mb-4">
+                    <li class="menu-link">
+                        <a href="statistika.html" class="menu-item">
+                            <img src="../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+                            <span class="ml-2">Statistika</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="alis-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+                            <span class="ml-2">Alış fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link menu-active">
+                        <a href="hesab-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesab-fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="muqavileler.html" class="menu-item">
+                            <img src="../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+                            <span class="ml-2">Müqavilələr</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="vergi.html" class="menu-item">
+                            <img src="../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+                            <span class="ml-2">Vergi hesablayıcısı</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="hesabatlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesabatlar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="ayarlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/setting.svg" class="sidebar-svg">
+                            <span class="ml-2">Ayarlar</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="color-red font-wei-500 font-16">Hesabdan çıxış</a>
+            </nav>
+        </div>
+        <div class="section-title">
+            <h3 class="title font-22">Alış-fakturalar</h3>
+        </div>
+    </div>
+
+    <section>
+        <div class="title-area d-flex justify-content-between">
+            <div class="section-title d-flex justify-content-between">
+                <h4 class="title">Yeni alış faktura əməliyyatları</h4>
+            </div>
+            <ul class="header-right d-flex">
+                <li class="nav-item dropdown notification_dropdown">
+                    <a class="nav-link bell ai-icon my-3" role="button">
+                        <img src="../assets/images/bell.svg">
+                        <div class="pulse-css rounded-circle"></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <ul class="list-unstyled">
+                            <li class="dropdown-item d-flex mt-4">
+                                <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                    🎉
+                                </div>
+                                <div class="ml-4">
+                                    <div>MaliApp yeniləndi!</div>
+                                    <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                    <div class="text-muted">05.01.2020</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item d-flex mt-4">
+                                <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                    <img src="../assets/images/notify-hesab.svg">
+                                </div>
+                                <div class="ml-4">
+                                    <div>Hesab-faktura</div>
+                                    <div>12345678 nömrəli hesab -faktura gecikir</div>
+                                    <div class="text-muted">05.01.2020</div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown header-profile">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                        <div class="avatar-img d-flex">
+                            <p class="text-white font-weight-bold">FA</p>
+                            <span class="mt-3 ml-2 changeArrowHover">Fuad Aliyev</span>
+                            <img src="../assets/images/bottom-arrow.svg" class="ml-3 mb-3 rotateImgHover">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="" class="dropdown-item ai-icon">
+                            <p>Ayarlar</p>
+                        </a>
+                        <a href="" class="dropdown-item ai-icon">
+                            <p class="text-danger">Hesabdan çıxış</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row hesab-faktura d-flex justify-content-between py-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex">
+                <div class="d-flex flex-row">
+                    <div class="pr-4">
+                        <h5 class="font-18 font-wei-500">Alış-faktura</h5>
+                        <span>#12345678</span>
+                    </div>
+                </div>
+                <div class="vertical-line pl-4"></div>
+                <div class="currency-pricing d-flex align-items-center justify-content-center">
+                    <span class="font-wei-600">$12.500</span>
+                </div>
+                <div class="vertical-line ml-4"></div>
+                <button class="btn mali-btn willBePaid bg-orange">Ödəniləcək</button>
+                <button class="btn mali-btn willHalfPaid bg-blue hidden">Qismən ödənilmiş</button>
+            </div>
+            <div class="tarixce-edit col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end align-items-center">
+                <a href="" class="font-14 font-wei-500">Baxış</a>
+                <a href="yeni-alis-faktura.html" class="font-14 font-wei-500">Düzəliş et</a>
+                <a href="../alis-faktura.html" class="font-14 font-wei-500"> Ləğv et <img src="../assets/images/close-gray.svg" class="close-gray ml-2"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-invoice bg-white">
+                    <div class="alert alert-gray changeArrowEl py-4" data-toggle="collapse" data-target="#invoice" aria-expanded="false" aria-controls="company">
+                        <div class="container d-flex justify-content-between align-items-center">
+                            <div class="invoice-created d-flex">
+                                <div
+                                    class="circle-icon rounded-circle bg-gray d-inline-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/invoice-white.svg">
+                                </div>
+                                <div>
+                                    <h5 class="font-18">Alış-faktura yaradıldı</h5>
+                                    <span class="font-14">01.01.2021</span>
+                                    <span class="dot"></span>
+                                    <span class="font-14">18:00</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../assets/images/top-arrow.svg" class="rotateImgEl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse show text-center" id="invoice">
+                        <button class="btn btn-confirm mali-btn bg-green" onclick="confirm()">Təsdiqlə</button>
+                        <div class="d-flex flex-column confirmAndSendSection hidden pl-5 pb-4">
+                            <div class="horizontal-line ml-4 my-3"></div>
+                            <div class="d-flex flex-row">
+                                <div
+                                    class="circle-icon rounded-circle bg-lightgreen d-inline-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/greenTick.svg">
+                                </div>
+                                <div class="text-left">
+                                    <h5 class="font-18">Təsdiqləndi</h5>
+                                    <span class="font-14">01.01.2021</span>
+                                    <span class="dot"></span>
+                                    <span class="font-14">18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="confirm" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button class="btn close close-btn rounded-circle" id="close" data-dismiss="modal">
+                                    <img src="../assets/images/close.svg">
+                                </button>
+                                <div class="alert alert-gray d-flex align-items-center my-5">
+                                    <div
+                                        class="circle-icon rounded-circle bg-gray d-inline-flex justify-content-center align-items-center">
+                                        <img src="../assets/images/letter-icon.svg">
+                                    </div>
+                                    <h5 class="font-18 pt-2">Alış-fakturanı göndər</h5>
+                                </div>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label>Alıcının E-maili</label>
+                                            <input type="text" class="form-control" placeholder="Alıcının E-mailini daxil edin">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>CC</label>
+                                            <input type="text" class="form-control" placeholder="CC daxil edin">
+                                        </div>
+                                        <button class="btn mali-btn bg-green ml-auto mt-3 confirmAndSend" data-dismiss="modal">
+                                            Təsdiqlə və göndər
+                                            <img src="../assets/images/right-arrow.svg" class="ml-3">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-md-12">
+                <div class="card-invoice bg-white">
+                    <div class="alert alert-orange changeArrowEl py-4" data-toggle="collapse" data-target="#sent" aria-expanded="false" aria-controls="company">
+                        <div class="container d-flex justify-content-between align-items-center">
+                            <div class="invoice-created d-flex align-items-center">
+                                <div
+                                    class="circle-icon rounded-circle bg-orange d-inline-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/sent.svg">
+                                </div>
+                                <h5 class="font-18 pt-2">Göndərildi</h5>
+                            </div>
+                            <div>
+                                <img src="../assets/images/arrow-bottom.svg" class="rotateImgEl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse text-center px-5" id="sent">
+                        <div class="invoiceSent row borderBottomGray py-3">
+                            <div class="col-md-6 text-left">
+                                <h5 class="font-18">Alış-faktura göndərildi</h5>
+                                <span class="font-14">01.01.2021</span>
+                                <span class="dot"></span>
+                                <span class="font-14">Son ödəmə müddəti: 02.02.2021</span>
+                            </div>
+                            <div class="col-md-3 text-left progressBar">
+                                <span class="font-14"><span class="font-wei-600">$ 12.500</span> / 50.000</span>
+                                <div class="progress mt-3" style="height:4px">
+                                    <div class="progress-bar" style="width:60%;height:4px"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-right notification pt-3">
+                                <a href="" data-target="#xatirlama" data-toggle="modal">
+                                    <img src="../assets/images/notifications_active-24px (1).svg" alt="">
+                                    <span>Xatırlatma göndər</span>
+                                </a>
+                            </div>    
+                        </div>
+
+                        <div class="row py-3">
+                            <div class="col-12 borderBottomGray py-2">
+                                <div data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="company">
+                                    <div class="d-flex justify-content-between align-items-center changeArrowEl">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/history.svg">
+                                            <h5 class="font-15 pt-2 pl-3">Ödəniş tarixçəsi</h5>
+                                        </div>
+                                        <div>
+                                            <img src="../assets/images/green-top-arrow.svg" class="rotateImgEl">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse show text-center w-100 pt-2" id="history">
+                                <table class="d-flex font-wei-500 font-15">
+                                    <tbody class="w-100">
+                                        <tr class="d-flex px-2 mt-2">
+                                            <td class="d-flex borderBottomGray flex-row w-100 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="paymentHistoryİcon rounded-circle bg-lightgreen d-inline-flex justify-content-center align-items-center">
+                                                        <img src="../assets/images/greenTick.svg">
+                                                    </div>
+                                                    <span class="pl-3">+ 125.00 AZN</span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="font-14">01.01.2021</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-14">18:00</span>
+                                                    <a class="pl-4" onclick="removeElement(this)"> <span class="remove-hidden">Sil</span> <img src="../assets/images/close-gray.svg" class="close-gray ml-2"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="d-flex px-2 mt-2">
+                                            <td
+                                                class="d-flex borderBottomGray flex-row w-100 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div
+                                                        class="paymentHistoryİcon rounded-circle bg-lightgreen d-inline-flex justify-content-center align-items-center">
+                                                        <img src="../assets/images/greenTick.svg">
+                                                    </div>
+                                                    <span class="pl-3">+ 125.00 AZN</span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="font-14">01.01.2021</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-14">18:00</span>
+                                                    <a class="pl-4" onclick="removeElement(this)"> <span class="remove-hidden">Sil</span> <img src="../assets/images/close-gray.svg" class="close-gray ml-2"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="d-flex px-2 mt-2">
+                                            <td class="d-flex borderBottomGray flex-row w-100 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="paymentHistoryİcon rounded-circle bg-lightgreen d-inline-flex justify-content-center align-items-center">
+                                                        <img src="../assets/images/greenTick.svg">
+                                                    </div>
+                                                    <span class="pl-3">+ 125.00 AZN</span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="font-14">01.01.2021</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-14">18:00</span>
+                                                    <a class="pl-4" onclick="removeElement(this)"> <span class="remove-hidden">Sil</span> <img src="../assets/images/close-gray.svg" class="close-gray ml-2"></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="newPayment row py-4 text-left">
+                            <div class="col-12">
+                                <div>
+                                    <h5 class="font-18 fonr-wei-500">Yeni ödəniş qeydə al</h5>
+                                </div>
+                                <div class="row pt-3 font-wei-500">
+                                    <div class="form-group col-md-6">
+                                        <label>Ödəniş tarixi</label>
+                                        <input type="date" class="form-control" value="2020-01-13">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Ödəniş miqdarı</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Qiyməti daxil edin">
+                                            <div class="input-group-append">
+                                                <button class="btn dropdown-toggle changeArrowEl" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <div class="valyutaContent">AZN</div>
+                                                    <img src="../assets/images/bottom-arrow.svg" class="ml-2 rotateImgEl">
+                                                </button>
+                                                <div class="dropdown-menu changeValyuta">
+                                                    <a href="#" class="dropdown-item">USD</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 mt-3">
+                                        <label for="method" class="w-100 pb-3">
+                                            Ödəniş metodu
+                                        </label>
+                                        <input type="radio" name="method"><label class="mr-5 ml-3">Nağdsız</label>
+                                        <input type="radio" name="method"><label class="ml-3">Nağd</label>
+                                    </div>
+                                </div>
+                                <div class="text-center py-3">
+                                    <button onclick="continueBtn()" class="btn mali-btn bg-green ml-auto mt-3">
+                                        Qeydə al
+                                        <img src="../assets/images/right-arrow.svg" class="ml-2">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="xatirlama" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button class="btn close close-btn rounded-circle" id="close" data-dismiss="modal">
+                                    <img src="../assets/images/close.svg">
+                                </button>
+                                <div class="alert alert-gray d-flex align-items-center my-5">
+                                    <div class="circle-icon rounded-circle bg-gray d-inline-flex justify-content-center align-items-center">
+                                        <img src="../assets/images/letter-icon.svg">
+                                    </div>
+                                    <h5 class="font-18 pt-2">Xatırlatma göndər</h5>
+                                </div>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label>Alıcının E-maili</label>
+                                            <input type="text" class="form-control" placeholder="Alıcının E-mailini daxil edin">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>CC</label>
+                                            <input type="text" class="form-control" placeholder="CC daxil edin">
+                                        </div>
+                                        <button class="btn mali-btn bg-green ml-auto mt-3" data-dismiss="modal">
+                                            Xatırlatma göndər
+                                            <img src="../assets/images/right-arrow.svg" class="ml-3">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div class="card-invoice bg-white">
+                    <div class="alert alert-green changeArrowEl py-4" data-toggle="collapse" data-target="#paid" aria-expanded="false" aria-controls="company">
+                        <div class="container d-flex justify-content-between align-items-center">
+                            <div class="invoice-created d-flex align-items-center">
+                                <div
+                                    class="circle-icon rounded-circle bg-green d-inline-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/white-tick.svg">
+                                </div>
+                                <h5 class="font-18 pt-2">Ödənildi</h5>
+                            </div>
+                            <div>
+                                <img src="../assets/images/arrow-bottom.svg" class="rotateImgEl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse text-center" id="paid">
+                        <div class="d-flex flex-column pl-5 pb-4">
+                            <div class="horizontal-line ml-4 my-3"></div>
+                            <div class="d-flex flex-row">
+                                <div class="circle-icon rounded-circle bg-lightgreen d-inline-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/green-tick.svg">
+                                </div>
+                                <div class="text-left">
+                                    <h5 class="font-18">Alış-faktura tam ödənildi</h5>
+                                    <span class="font-14">01.01.2021</span>
+                                    <span class="dot"></span>
+                                    <span class="font-14">18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="../assets/js/arrow.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/invoice.js"></script>
+<script src="../assets/js/purchase.js"></script>
+<script src="../assets/js/live-search.js"></script>
+
+</body>
+</html>

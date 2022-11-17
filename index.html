@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mali App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header class="landing-page-header d-flex align-items-center">
+        <div class="container-fluid" style="width: 90%;">
+            <div class="row d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <a href="/">
+                        <img src="./assets/images/maliapp-logo.svg" alt="Mali App Logo">
+                    </a>
+                </div>
+                <div class="menu-container">
+                    <ul class="main-menu d-flex align-items-center justify-content-center">
+                        <li><a href="#mainPage">Ana səhifə</a></li>
+                        <li><a href="#aboutUs">Haqqımızda</a></li>
+                        <li><a href="#pricePackages">Qiymət paketləri</a></li>
+                        <li><a href="support.html">Dəstək</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                    <div class="animatedNavLine"></div>
+                </div>
+                <div class="d-flex align-items-center" data-toggle="modal" data-target="#signUp">
+                    <button class="free-trial">Pulsuz sına</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="title-mobile-area">
+        <div class="">
+            <div class="fixed-header d-flex justify-content-between align-items-center">
+                <div class="logo-area">
+                    <img src="assets/images/maliapp-logo.svg">
+                </div>
+                <ul class="header-mobile-right d-flex align-items-center">
+                    <li class="nav-item dropdown notification_dropdown mr-2">
+                        <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+                            <img src="assets/images/bell.svg">
+                            <div class="pulse-css rounded-circle"></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="list-unstyled">
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                        🎉
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>MaliApp yeniləndi!</div>
+                                        <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                        <img src="assets/images/notify-hesab.svg">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>Hesab-faktura</div>
+                                        <div>12345678 nömrəli hesab-faktura gecikir</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+
+                    <div class="mobile-navbar">
+                        <div class="menu-buttons">
+                            <a class="menu"><img src="assets/images/menu.svg"></a>
+                            <a class="close-menu hidden"><img src="assets/images/close-menu.svg"></a>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </div>
+            <nav>
+                <ul class="mobile-sidenav landing-sidenav mt-3 mb-4">
+                    <li class="menu-link menu-active">
+                        <a href="#mainPage" class="menu-item">
+                            <span class="ml-2">Ana səhifə</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="#aboutUs" class="menu-item">
+                            <span class="ml-2">Haqqımızda</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="#pricePackages" class="menu-item">
+                            <span class="ml-2">Qiymət paketləri</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="support.html" class="menu-item">
+                            <span class="ml-2">Dəstək</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="blog.html" class="menu-item">
+                            <span class="ml-2">Blog</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="main-content" id="mainPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center d-flex flex-column justify-content-center align-items-center py-5">
+                    <h1 class="font-wei-600">
+                        MaliApp<br>
+                        sadə <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h1>
+                    <div class="login-signup py-3 font-15">
+                        <button class="bg-green font-wei-600" data-toggle="modal" data-target="#signIn">Daxil ol</button>
+                        <button data-toggle="modal" data-target="#signUp" class="font-wei-600">Qeydiyyat</button>
+                    </div>
+                    <p class="py-3 font-18">Vaxtınızı daha mühüm məsələlərə yönəldin! MaliApp sizin uçot <br id="none">məlumatlarınızın daim qayğısına qalır!</p>
+                </div>
+
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <img src="assets/images/landing/dash-2.jpg" alt="" class="landing-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="animation-section pt-190">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="scroll-section mr-4 tab-content">
+                    <div class="pr-5 pb-5 tab-pane fade show active" id="statistika">
+                        <button class="bg-green font-15">STATİSTİKA</button>
+                        <h3 class="pt-4 pb-3">Biznesinizi optimallaşdırmaq üçün statistik göstəricilər</h3>
+                        <p class="text-muted">Maliapp sizin əməliyyatlarınızı analiz edərək biznesiniz haqqında mühüm göstəriciləri anlaşılan formada göstərir!</p>
+                    </div>
+                    <div class="pr-5 pb-5 tab-pane fade" id="alis">
+                        <button class="bg-green font-15">ALIŞ-FAKTURA</button>
+                        <h3 class="pt-4 pb-3">Bütün alışlarınıza onlayn nəzarət edin</h3>
+                        <p class="text-muted">Yaradılmış alış fakturalarınızı mütəmadi bildirişlər alaraq daim nəzarətdə saxlayın.</p>
+                    </div>
+                    <div class="pr-5 pb-5 tab-pane fade" id="hesab">
+                        <button class="bg-green font-15">HESAB-FAKTURA</button>
+                        <h3 class="pt-4 pb-3">Bütün alışlarınıza onlayn nəzarət edin</h3>
+                        <p class="text-muted">Yaradılmış alış fakturalarınızı mütəmadi bildirişlər alaraq daim nəzarətdə saxlayın.</p>
+                    </div>
+                    <div class="pr-5 pb-5 tab-pane fade" id="muqavileler">
+                        <button class="bg-green font-15">MÜQAVİLƏLƏR</button>
+                        <h3 class="pt-4 pb-3">Bütün alışlarınıza onlayn nəzarət edin</h3>
+                        <p class="text-muted">Yaradılmış alış fakturalarınızı mütəmadi bildirişlər alaraq daim nəzarətdə saxlayın.</p>
+                    </div>
+                    <div class="pr-5 pb-5 tab-pane fade" id="vergi">
+                        <button class="bg-green font-15">VERGİ HESABLAYICI</button>
+                        <h3 class="pt-4 pb-3">Bütün alışlarınıza onlayn nəzarət edin</h3>
+                        <p class="text-muted">Yaradılmış alış fakturalarınızı mütəmadi bildirişlər alaraq daim nəzarətdə saxlayın.</p>
+                    </div>
+                    <div class="pr-5 tab-pane fade" id="hesabatlar">
+                        <button class="bg-green font-15">HESABATLAR</button>
+                        <h3 class="pt-4 pb-3">Bütün alışlarınıza onlayn nəzarət edin</h3>
+                        <p class="text-muted">Yaradılmış alış fakturalarınızı mütəmadi bildirişlər alaraq daim nəzarətdə saxlayın.</p>
+                    </div>
+                </div>
+                <div class="animation-area position-relative">
+                    <div class="animation-images">
+                        <img src="assets/images/landing/Biznesmen.jpg" alt="">
+                    </div>
+                    <div class="anime-bg"></div>
+                    <div class="animationNav">
+                        <div class="menu-logo">
+                            <a href=""><img src="assets/images/maliapp-logo.svg"></a>
+                        </div>
+                        <div class="navbar-menu">
+                            <div class="side-menu">
+                                <ul class="nav nav-tabs">
+                                    <li class="menu-link w-100">
+                                        <a href="#statistika" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/statistic.svg" class="sidebar-svg">
+                                            <span class="ml-2">Statistika</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link w-100">
+                                        <a href="#alis" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/sebet.svg" class="sidebar-svg">
+                                            <span class="ml-2">Alış fakturalar</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link w-100">
+                                        <a href="#hesab" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/hesab.svg" class="sidebar-svg">
+                                            <span class="ml-2">Hesab-fakturalar</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link w-100">
+                                        <a href="#muqavileler" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+                                            <span class="ml-2">Müqavilələr</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link w-100">
+                                        <a href="#vergi" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/vergi.svg" class="sidebar-svg">
+                                            <span class="ml-2">Vergi hesablayıcısı</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-link w-100">
+                                        <a href="#hesabatlar" class="menu-item" data-toggle="tab">
+                                            <img src="assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+                                            <span class="ml-2">Hesabatlar</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="landing-cards-container pt-190 bg-white">
+        <div class="container">
+            <div class="cards-desktop">
+                <div class="row"> 
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="landing-card d-flex flex-column text-center px-4">
+                            <div class="bg-green d-flex justify-content-center align-items-center mx-auto">
+                                <img src="assets/images/landing/sened.svg" alt="">
+                            </div>
+                            <h4 class="font-wei-600 py-3">Biznesin üçün sənədləri avtomatik yarat</h4>
+                            <p class="font-15">Əsas məlumatları daxil edərək peşəkar müqavilə, hesab-faktura və alış fakturalarını asanlıqla yarat</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="landing-card d-flex flex-column text-center px-4">
+                            <div class="bg-blue d-flex justify-content-center align-items-center mx-auto">
+                                <img src="assets/images/landing/calculate.svg" alt="">
+                            </div>
+                            <h4 class="font-wei-600 py-3">Vergi öhdəliyini asanlıqla hesabla</h4>
+                            <p class="font-15">Sadə sualları cavablandıraraq vergi öhdəiyinizi dəqiq hesablayın və ödənilmə vaxtına yaxın bildiriş al</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="landing-card d-flex flex-column  text-center px-4">
+                            <div class="bg-orange d-flex justify-content-center align-items-center mx-auto">
+                                <img src="assets/images/landing/ucot.svg" alt="">
+                            </div>
+                            <h4 class="font-wei-600 py-3">Uçot məlumatlarını izlə və idarə et</h4>
+                            <p class="font-15">Faydalı uçot statistikaları və hesabtlarından yararlanaraq biznesinin performansına nəzarət et</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slickCarousel">
+            <div class="landing-card d-flex flex-column text-center px-4">
+                <div class="bg-green d-flex justify-content-center align-items-center mx-auto">
+                    <img src="assets/images/landing/sened.svg" alt="">
+                </div>
+                <h4 class="font-wei-600 py-3">Biznesin üçün sənədləri avtomatik yarat</h4>
+                <p class="font-15">Əsas məlumatları daxil edərək peşəkar müqavilə, hesab-faktura və alış
+                    fakturalarını asanlıqla yarat</p>
+            </div>
+            <div class="landing-card d-flex flex-column text-center px-4">
+                <div class="bg-blue d-flex justify-content-center align-items-center mx-auto">
+                    <img src="assets/images/landing/calculate.svg" alt="">
+                </div>
+                <h4 class="font-wei-600 py-3">Vergi öhdəliyini asanlıqla hesabla</h4>
+                <p class="font-15">Sadə sualları cavablandıraraq vergi öhdəiyinizi dəqiq hesablayın və
+                    ödənilmə vaxtına yaxın bildiriş al</p>
+            </div>
+            <div class="landing-card d-flex flex-column text-center px-4">
+                <div class="bg-orange d-flex justify-content-center align-items-center mx-auto">
+                    <img src="assets/images/landing/ucot.svg" alt="">
+                </div>
+                <h4 class="font-wei-600 py-3">Uçot məlumatlarını izlə və idarə et</h4>
+                <p class="font-15">Faydalı uçot statistikaları və hesabtlarından yararlanaraq biznesinin
+                    performansına nəzarət et</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section pt-190 bg-white" id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="video-content d-flex justify-content-center align-items-center">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <img src="assets/images/landing/play.svg" class="play-icon">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="premium-packet bg-white pt-190" id="pricePackages">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="d-flex flex-column font-wei-600 font-30 pb-5">
+                    <span>Premium paketin</span>
+                    <span> üstünlüklərindən yararlanın!</span>
+                </h3>
+            </div>
+            <div class="col-md-12 text-center">
+                <ul class="chosing-card justify-content-between align-items-center nav nav-pills hidden" id="pills-tab" role="tablist">
+                    <li>
+                        <a href="#premium" data-toggle="pill" class="nav-link active">Premium</a>
+                    </li>
+                    <li>
+                        <a href="#free" data-toggle="pill" class="nav-link">Pulsuz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row tab-content hidden">
+                <div class="col-md-12 col-lg-6 tab-pane fade show active" id="premium" role="tabpanel">
+
+                    <div class="card">
+                        <div class="packet-header d-flex flex-column">
+                            <div class="color-green font-weight-bold">PREMIUM PAKET</div>
+                            <div class="card-pricing">16 AZN <span class="font-14 text-muted">/ Aylıq</span></div>
+                            <div class="mt-2"><span class="color-green font-weight-bold">2 həftə pulsuz</span> sınaq müddət</div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="packet-content">
+                            <ul>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Sənəd yaratmaq</div>
+                                    </div>
+                                    <span class="bg-green text-white">Limitsiz</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Hər növ vergilərin hesablanması</div>
+                                    </div>
+                                    <span class="bg-green text-white">Limitsiz</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot statistikalarının izlənməsi</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block card-btn">Davam et</button>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-6 tab-pane fade" id="free" role="tabpanel">
+
+                    <div class="card">
+                        <div class="packet-header d-flex flex-column">
+                            <div class="text-muted font-weight-bold">SADƏ PAKET</div>
+                            <div class="card-pricing">Pulsuz</div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="packet-content">
+                            <ul>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Sənəd yaratmaq</div>
+                                    </div>
+                                    <span>Ayda 10 dəfə</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Hər növ vergilərin hesablanması</div>
+                                    </div>
+                                    <span>Ayda 1 dəfə</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot statistikalarının izlənməsi</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block card-btn">Davam et</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mobile-hidden">
+                <div class="col-md-12 col-lg-6">
+
+                    <div class="card">
+                        <div class="packet-header d-flex flex-column">
+                            <div class="text-muted font-weight-bold">SADƏ PAKET</div>
+                            <div class="card-pricing">Pulsuz</div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="packet-content">
+                            <ul>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Sənəd yaratmaq</div>
+                                    </div>
+                                    <span>Ayda 10 dəfə</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Hər növ vergilərin hesablanması</div>
+                                    </div>
+                                    <span>Ayda 1 dəfə</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot statistikalarının izlənməsi</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block card-btn">Davam et</button>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-6">
+
+                    <div class="card">
+                        <div class="packet-header d-flex flex-column">
+                            <div class="color-green font-weight-bold">PREMIUM PAKET</div>
+                            <div class="card-pricing">16 AZN <span class="font-14 text-muted">/ Aylıq</span></div>
+                            <div class="mt-2"><span class="color-green font-weight-bold">2 həftə pulsuz</span> sınaq müddət</div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="packet-content">
+                            <ul>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Sənəd yaratmaq</div>
+                                    </div>
+                                    <span class="bg-green text-white">Limitsiz</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Hər növ vergilərin hesablanması</div>
+                                    </div>
+                                    <span class="bg-green text-white">Limitsiz</span>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot statistikalarının izlənməsi</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex">
+                                        <img src="assets/images/landing/green-tick.png" class="green-tick">
+                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block card-btn">Davam et</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-area d-flex flex-row justify-content-between align-items-center">
+                <div class="footer-logo">
+                    <img src="./assets/images/maliapp-logo.svg" alt="">
+                    <span class="font-15 text-muted ml-3">© 2021 MaliApp Financial Inc.</span>
+                </div>
+                <div class="social-icons text-muted">
+                    <a href="#">
+                        <img src="assets/images/landing/instagram.svg">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/landing/facebook.svg">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/landing/twitter.svg">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/landing/youtube.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <div class="modal left fade" id="signUp" role="dialog" aria-labelledby="signUpLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="nav flex-sm-column flex-row">
+                            <button type="button" data-dismiss="modal" class="closeSignUpModal">
+                                <img src="./assets/images/close.svg" alt="">
+                            </button>
+                            <div class="container packet-container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <h4 class="d-flex flex-column font-wei-600">
+                                            <span>Premium paketin</span>
+                                            <span> üstünlüklərindən yararlanın!</span>
+                                        </h4>
+                                    </div>
+                                    <div class="col-md-12 text-center py-4">
+                                        <ul class="chosing-card justify-content-between align-items-center nav nav-pills" id="pills-tab" role="tablist">
+                                            <li>
+                                                <a href="#premium2" data-toggle="pill" class="nav-link active">Premium</a>
+                                            </li>
+                                            <li>
+                                                <a href="#free2" data-toggle="pill" class="nav-link">Pulsuz</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row tab-content d-flex justify-content-center">
+                                    <div class="col-md-12 col-lg-10 tab-pane fade show active" id="premium2"
+                                        role="tabpanel">
+
+                                        <div class="card">
+                                            <div class="packet-header d-flex flex-column">
+                                                <div class="color-green font-weight-bold">PREMIUM PAKET</div>
+                                                <div class="card-pricing">16 AZN <span class="font-14 text-muted">/
+                                                        Aylıq</span></div>
+                                                <div class="mt-2"><span class="color-green font-weight-bold">2 həftə
+                                                        pulsuz</span> sınaq
+                                                    müddət</div>
+                                            </div>
+
+                                            <hr class="my-4">
+
+                                            <div class="packet-content">
+                                                <ul>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Sənəd yaratmaq</div>
+                                                        </div>
+                                                        <span class="bg-green text-white">Limitsiz</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Hər növ vergilərin hesablanması</div>
+                                                        </div>
+                                                        <span class="bg-green text-white">Limitsiz</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Uçot statistikalarının izlənməsi</div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Uçot hesabatlarının çıxarılması</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="btn btn-block card-btn" onclick="showSignUpContent()">Davam et</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 col-lg-10 tab-pane fade" id="free2" role="tabpanel">
+
+                                        <div class="card">
+                                            <div class="packet-header d-flex flex-column">
+                                                <div class="text-muted font-weight-bold">SADƏ PAKET</div>
+                                                <div class="card-pricing">Pulsuz</div>
+                                            </div>
+
+                                            <hr class="my-4">
+
+                                            <div class="packet-content">
+                                                <ul>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Sənəd yaratmaq</div>
+                                                        </div>
+                                                        <span>Ayda 10 dəfə</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Hər növ vergilərin hesablanması</div>
+                                                        </div>
+                                                        <span>Ayda 1 dəfə</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Uçot statistikalarının izlənməsi</div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="d-flex">
+                                                            <img src="assets/images/landing/green-tick.png"
+                                                                class="green-tick">
+                                                            <div>Uçot hesabatlarının çıxarılması</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="btn btn-block card-btn" onclick="showSignUpContent()">Davam et</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign-up-content hidden">
+                                <h3>Yeni hesab yaradın 🎉</h3>
+                                <p class="font-15 text-muted pb-3">Yeni hesab yaradın və maliyyə işlərinizi onlayn şəkildə asanlıqla idarə edin!</p>
+                                <form action="" method="POST" class="needs-validation" novalidate>
+                                    <div class="d-flex flex-column">
+                                        <div class="input">
+                                            <label>E-mail</label>
+                                            <input class="form-control" type="text" name="email" id="email" placeholder="E-mailinizi daxil edin" required>
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        <div class="input position-relative">
+                                            <label class="password">Şifrə</label>
+                                            <input id="password-field1" type="password" class="form-control mt-2" name="password" placeholder="Şifrənizi daxil edin" required>
+                                            <img src="assets/images/landing/eye-icon.svg" toggle="#password-field1" class="toggle-password field-icon">
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="input">
+                                            <label>Ad və soyad</label>
+                                            <input class="form-control" type="text" name="" id="name"
+                                                placeholder="Adınızı və soyadınızı daxil edin" required>
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+
+                                        <label class="pt-4">
+                                            <input type="radio">
+                                            <a data-toggle="modal" data-target="#terms" class="color-green"> İstifadəçi razılaşmasını</a> oxudum və qəbul edirəm
+                                        </label>
+                                        <button type="submit">Hesab yarat</button>
+                                        <p class="text-center font-15 text-muted">Artıq hesabınız var? <a href="" class="color-green login">Daxil olun</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal left fade" id="signIn" role="dialog" aria-labelledby="signInLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="nav flex-sm-column flex-row">
+                            <button type="button" data-dismiss="modal" class="closeSignInModal">
+                                <img src="./assets/images/close.svg" alt="">
+                            </button>
+                            <div class="sign-in-content">
+                                <h3>Xoş gördük 👋🏻</h3>
+                                <p class="font-15 text-muted pb-3">Hesabınıza daxil olun və maliyyə işlərinizi onlayn şəkildə asanlıqla idarə edin!</p>
+                                <form action="" class="needs-validation" novalidate>
+                                    <div class="d-flex flex-column">
+                                        <div class="input">
+                                            <label>E-mail</label>
+                                            <input type="text" class="form-control"  name="" placeholder="E-mailinizi daxil edin" required>
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="input position-relative">
+                                            <label class="password">Şifrə</label>
+                                            <input id="password-field2" type="password" class="form-control mt-2" name="password" placeholder="Şifrənizi daxil edin" required>
+                                            <img src="assets/images/landing/eye-icon.svg" toggle="#password-field2" class="toggle-password field-icon">
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        <label for="" class="pt-4 d-flex justify-content-between">
+                                            <span>
+                                                <input type="radio">
+                                                Məni xatırla
+                                            </span>
+                                            <a href="" class="color-green forgotPasswordLink">Şifrəmi unutdum</a>
+                                        </label>
+                                        <button>Daxil olun</button>
+                                        <p class="text-center font-15 text-muted">Hesabınız yoxdur?<a href="" class="color-green"> Qeydiyyatdan keçin</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- shifreni unutmaq -->
+                            <div class="forgotPassword hidden">
+                                <h3>Şifrəni bərpa et 🤘🏻</h3>
+                                <p class="font-15 text-muted pb-3">Hesabınıza bağlı olan E-mail adresinizi daxil edin. Daha sonra, sizə göndərilən kodla şifdrənizi bərpa edə bilərsiniz.</p>
+                                <form action="">
+                                    <div class="d-flex flex-column">
+                                        <label for="">E-mail</label>
+                                        <input class="errorMessages" type="email" name="" placeholder="E-mailinizi daxil edin">
+                                        <button class="sendPassword">Şifrəni göndər</button>
+                                        <p class="text-center font-15 text-muted">Hesabınıza<a href="" class="color-green login"> daxil olun</a></p>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- shifrenin berpasi -->
+
+                            <div class="updatePassword hidden">
+                                <h3>Yeni şifrə təyin edin 🔒</h3>
+                                <form action="" class="needs-validation" novalidate>
+                                    <div class="d-flex flex-column mt-4">
+                                        <div class="input position-relative">
+                                            <label for="" class="password">Yeni şifrə</label>
+                                            <input id="password-field3" type="password" class="form-control" name="password" placeholder="Şifrənizi daxil edin" required>
+                                            <img src="assets/images/landing/eye-icon.svg" toggle="#password-field3" class="toggle-password field-icon">
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="input position-relative">
+                                            <label for="" class="password">Şifrəni təsdiqləyin</label>
+                                            <input id="password-field4" type="password" class="form-control" name="password" placeholder="Şifrənizi daxil edin" required>
+                                            <img src="assets/images/landing/eye-icon.svg" toggle="#password-field4" class="toggle-password field-icon">
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <button type="submit">Təsdiqlə</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="terms">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button class="btn close close-btn rounded-circle" id="close" data-dismiss="modal">
+                    <img src="assets/images/close.svg">
+                </button>
+                <div class="modal-header invoice-header">
+                    <ul class="invoice-header-pills d-flex nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="menu-link">
+                            <a href="#userCond" data-toggle="pill" class="menu-item header-active">İstifadə şərtləri</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="#termCond" data-toggle="pill" class="menu-item">Məxfilik siyasəti</a>
+                        </li>
+                    </ul>
+                    <div class="invoice-header-mobile">
+                      <div class="select_wrap select_pills">
+                          <ul class="default_option d-flex justify-content-between align-items-center">
+                              <li>
+                                  <div class="option">
+                                    <p>İstifadə şərtləri</p>
+                                  </div>
+                              </li>
+                          </ul>
+                          <ul class="select_ul ul-pills nav nav-pills" id="pills-tab" role="tablist">
+                              <li>
+                                  <div class="option" data-pill="userCond">
+                                    İstifadə şərtləri
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="option" data-pill="termCond">
+                                    Məxfilik siyasəti
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>                              
+                    </div>
+                </div>
+                <div class="modal-body tab-content">
+                    <div class="tab-pane fade show active" id="userCond">
+                        <div>
+                            <p>Maliapp.az saytından (bundan sonra "sayt") və Maliapp mobil tətbiqindən (bundan sonra “mobil tətbiq”) istifadə etmək barədə bu İstifadəçi Razılaşması (bundan sonra "Razılaşma"), sayt və mobil tətbiq üzərindən xidmətlərin göstərilməsi qaydasını tənzimləyir, həmçinin SOFTECH MMC (bundan sonra “İcraçı”) ilə xidmətin İstifadəçisinin (bundan sonra “İstifadəçi”), qarşılıqlı hüquq və öhdəliklərini müəyyən edir.</p><br>
+
+                            <p>Hazırki Istifadəçi Razılaşmasında “xidmətlər” ifadəsi veb sayt və mobil tətbiq üzərindən istifadəçiyə təqdim olunan xidmətlərə birgə istinad edir.</p><br>
+                            <p>Hazırki İstifadəçi Razılaşmasında “istifadəçi” ifadəsi Maliapp veb saytı və Maliapp mobil tətbiqinin müştərilərinə, nümayəndələrinə və müştəri təşkilatlarının digər səlahiyyətli istifadəçilərinə, potensial müştərilərə və Maliapp xidmətləri istifadəçilərinə istinad edir.</p><br>
+
+                            <p>Hazırki İstifadəçi Razılaşması xidmətlərin təqdim olunmasında və ya başqa şəkildə dəyişiklikləri əks etdirmək üçün vaxtaşırı olaraq yenilənə bilər.</p><br>
+
+                            <h6><b>1. Müqavilənin predmeti</b></h6>
+                            <p><b>1.1</b> İcraçı, xidmətin İstifadəçisinə Maliapp.az veb saytından, habelə Maliapp mobil tətbiqindən müxtəlif vaxtlarda təqdim olunan xidmətlərdən istifadə hüququnu verir.</p><br>
+
+                            <p><b>1.2</b> İstifadəçi, saytda qeydiyyatdan keçməmişdən əvvəl bu Razılaşmanın bütün şərtləri ilə tam tanış olmalıdır. Bu Razılaşma ictimai oferta hesab olunur və Azərbaycan Respublikası Mülki Məcəlləsinin 409-cu maddəsinə uyğun olaraq İstifadəçinin saytdan və mobil tətbiqdən istifadə etməsi və ya qeydiyyatdan keçməsi onun bu Razılaşmanın bütün şərtlərini qəbul etməsi mənasını daşıyır.</p><br>
+
+                            <p><b>1.3</b> İstifadəçi Razılaşması İstifadəçi tərəfindən aksept (qəbul) olunduqdan sonra qüvvəyə minir və aşağıdakı tarixlərdən birinə qədər qüvvədədir:<br>
+                            &nbsp&nbsp a) İstifadəçi tərəfindən hesabın silindiyi tarix və ya <br>
+                            &nbsp&nbsp b) İstifadəçi Razılaşmasının ləğv edilməsi tarixinə qədər.</p><br>
+
+                            <p><b>1.4</b> İcraçı, istifadəçilərə aşağıda sadalanan funksionallıq üzrə xidmətlər təqdim edir:<br>
+                            &nbsp&nbsp&nbsp● Müqavilələrin tərtib olunması (istifadəçi müvafiq məlumatları daxil edərək müqavilələri onlayn şəkildə tərtib edir) <br>
+                            &nbsp&nbsp&nbsp● Uçot funksiyası (istifadəçinin proqrama daxil etdiyi əməliyyatlara əsasən vacib statistik göstəricilər və hesabatlar avtomatik tərtib olunur)<br>
+                            &nbsp&nbsp&nbsp● Vergi hesablayıcısı (istifadəçi müvafiq vergiləri dəqiqliklə hesablayır)<br>
+                            &nbsp&nbsp&nbsp● Hesab-fakturaların tərtib olunub qarşı tərəfə göndərilməsi<br>
+                            &nbsp&nbsp&nbsp● Alış fakturalarının tərtib olunması</p><br>
+
+                            <p><b>1.5</b> İcraçı, istənilən vaxt Maliapp xidmətlərini göstərməyi daimi və ya müvəqqəti olaraq dayandıra bilər.</p><br>
+
+                            <p><b>1.6</b> İcraçının təqdim etdiyi xidmətlərdən yararlanmaq niyyətində olan İstifadəçi ilə İcraçı və ya üçüncü şəxs arasında xidmət müqaviləsi bu sayt vasitəsilə bağlanır.</p><br>
+
+                            <p><b>1.7</b> İcraçı, İstifadəçinin razılığı olmadan öz öhdəliklərinin yerinə yetirilməsi üçün üçüncü şəxslərin xidmətlərini istifadə edə bilər.</p><br>
+
+                            <h6><b>2. İstifadənin ümumi qaydaları</b></h6>
+                            <p><b>2.1</b> Qeydiyyatdan keçməyən İstifadəçi saytın və mobil tətbiqin təqdim etdiyi informasiya və xidmətlər barədə məlumat almaq imkanına malikdir. Şəxsi kabinet vasitəsilə təqdim olunan tam xidmətlərin əldə olunması yalnız qeydiyyatdan keçildikdən sonra mümkündür.</p><br>
+
+                            <p><b>2.2</b> Qeydiyyat zamanı İstifadəçi ona məxsus etibarlı elektron poçt ünvanından və ya telefondan nömrəsindən istifadə etməlidir, hansıki qeydiyyat prosesi zamanı avtomatik olaraq elektron poçt ünvanına və ya telefon nömrəsinə göndərilən keçid “link”ini açmaqla təsdiq edilməlidir. İstifadəçi həmçinin qeydiyyat zamanı zəruri olan fərdi məlumatları təqdim etməlidir.</p><br>
+
+                            <p><b>2.3</b> İcraçı qeydiyyat və xidmətlərin təqdim olunması üçün digər şəxsi məlumatları tələb etmək hüququna malikdir.</p><br>
+
+                            <p><b>2.4</b> İcraçı, Razılaşmanın ayrılmaz tərkib hissəsi olan Məxfilik Siyasətinə uyğun olaraq İstifadəçilərin fərdi məlumatlarını toplayır, sistemləşdirir və saxlayır.</p><br>
+
+                            <p><b>2.5</b> İcraçı, qeydiyyatdan keçmə prosesində İstifadəçi tərəfindən verilən məlumatların (qeydiyyat üçün istifadə olunan elektron poçt ünvanı və ya telefon nömrəsi istisna olmaqla) düzgünlüyünü yoxlamır. Məlumatların düzgünlüyü İstifadəçi tərəfindən təmin olunur.</p><br>
+
+                            <p><b>2.6</b> Saytdan və ya mobil tətbiqdən istifadə edərkən texniki problemlər yarandıqda, İstifadəçi, İcraçıya support@maliapp.az ünvanından elektron poçtla məlumat verməlidir.</p><br>
+
+                            <p><b>2.7</b> Sayt və mobil tətbiqdə göstərilən xidmətləri qeyri-qanuni məqsədlər üçün istifadə etmək qadağandır.</p><br>
+
+                            <p><b>2.8</b> Maliapp.az saytı və Maliapp mobil tətbiqi Azərbaycandan olan İstifadəçilər üçün nəzərdə tutulmuşdur və Avropa İttifaqının (Aİ) vətəndaşları və ya AB ölkələrindən hər birinin ərazisində olan şəxslər üçün nəzərdə tutulmur. Bu cür İstifadəçilər saytdakı qeydiyyat prosedurundan keçməməli və saytdan hər hansı bir məqsəd üçün istifadəni dərhal dayandırmalıdırlar.</p><br>
+
+                            <p><b>2.9</b> İstifadəçinin qeydiyyat üçün istifadə etdiyi elektron poçt ünvanı və ya telefon nömrəsindən və şifrəsindən istifadə edərək, hesaba icazəsiz daxil olma halı aşkarlandığında, İstifadəçi, İcraçıya bu Razılaşmada qeyd olunan elektron poçt ünvanı vasitəsilə ilə dərhal məlumat verməli və hesabının şifrəsini dəyişdirməlidir.</p><br>
+
+                            <p><b>2.10</b> İstifadəçi, saytda qeydiyyatdan keçdikdə, İcraçı tərəfindən göndərilən aşağıdakı xarakterli mesajları qəbul etməyə razılıq verir:<br>
+                            &nbsp&nbsp&nbsp● Xidməti məlumatı olan məktublar (məsələn, saytda qeydiyyatın təsdiqlənməsi, şifrənin bərpası və s.);<br>
+                            &nbsp&nbsp&nbsp● İstifadəçiyə sayt və mobil tətbiq üzərindən xidmətlərin səmərəli istifadəsi ilə bağlı məlumat verilməsi<br>
+                            &nbsp&nbsp&nbsp● İcraçının fəaliyyətinə dair marketinq məlumatları və xəbərlər. İstifadəçi bu mesajların alınmasından imtina edə bilər.</p><br>
+
+                            <h6><b>3. Tərəflərin hüquq və vəzifələri</b></h6>
+                            <p><b>3.1</b> İstifadəçinin hüquq və vəzifələri:<br>
+                            &nbsp&nbsp&nbsp● İstifadəçi saytda və mobil tətbiqdə təqdim olunan məlumatlarla tanış olmaq, məlumat əldə etmək, təqdim olunan xidmətlər üçün zəruri olan digər hərəkətləri həyata keçirmək hüququna malikdir;<br>
+                            &nbsp&nbsp&nbsp● İstifadəçi qeydiyyat zamanı və xidmətlərin alınması zamanı düzgün və tam məlumatları təqdim etməlidir; həqiqətə uyğun olmayan və ya natamam daxil edilmiş, həmçinin yanlış daxil edilmiş məlumatlara görə çəkilmiş zərərlər üzrə bütün məsuliyyəti istifadəçi daşıyır;<br>
+                            &nbsp&nbsp&nbsp● İstifadəçi sayta zərər vurulması və ya işinə maneə törədilməsi məqsədilə hər hansı qeyri-qanuni fəaliyyətdən irəli gələn zərərlərə görə məsuliyyət daşıyır.</p><br>
+
+                            <p><b>3.2</b> İcraçının hüquq və vəzifələri:<br>
+                            &nbsp&nbsp&nbsp● Öz mülahizəsinə əsasən saytdan və mobil tətbiqdən istifadə qaydalarını dəyişmək, əlavə və ya ləğv etmək;<br>
+                            &nbsp&nbsp&nbsp● Saytdakı və ya mobil tətbiqdəki hər hansı məlumata çatımlılığı məhdudlaşdırmaq;<br>
+                            &nbsp&nbsp&nbsp● Saytdakı və ya mobil tətbiqdəki məlumatı yaratmaq, dəyişmək və silmək;<br>
+                            &nbsp&nbsp&nbsp● İstifadəçi tərəfindən təqdim olunmuş məlumatların təhlükəsizliyini Məxfilik Siyasətinə uyğun olaraq qorumaq;<br>
+                            &nbsp&nbsp&nbsp● Saytın və mobil tətbiqin işlək vəziyyətdə olmasını təmin etməlidir. <br>
+                            &nbsp&nbsp&nbsp● İcraçı bu müqavilənin 1.4-cü maddəsində göstərilmiş xidmətləri çoxaltmaq, dəyişmək və ləğv etmək  hüququna malikdir.</p><br>
+
+                            <h6><b>4. Əqli mülkiyyət</b></h6>
+                            <p><b>4.1</b> Sayta, mobil tətbiqə, həmçinin təqdim olunan xidmətlərə dair, eləcə də şəkillər, video və səs, dizayn elementləri, məlumat bazaları, əmtəə nişanları, ticarət adları, ticarət sirləri, proqram kodu və mətnlər daxil olmaqla, bütün hüquqlar İcraçıya məxsusdur.</p><br>
+
+                            <p><b>4.2</b> İstifadəçi tərəfindən, İcraçının sayt və mobil tətbiq üzrə müstəsna hüquqlarını köçürmək, dəyişdirmək, silmək, əlavə etmək, nəşr etmək, törəmə əsərlər yaratmaq, onlara əsaslanan məhsullar hazırlamaq, satmaq, və ya hər hansı digər şəkildə qanunsuz istifadə etmək qadağandır.</p><br>
+
+                            <p><b>4.3</b>Sayt və ya mobil tətbiqdə yaradılan sənədlərə dair bütün hüquqlar İcraçıya məxsusdur.</p><br>
+
+                            <h6>5. Tərəflərin məsuliyyəti</h6>
+                            <p><b>5.1</b> İstifadəçi onun tərəfindən təqdim olunmuş məlumatla bağlı tam məsuliyyət daşıyır.</p><br>
+
+                            <p><b>5.2</b> İcraçı və ya onun nümayəndələri heç bir halda, İstifadəçiyə və ya üçüncü şəxsə vurulmuş hər hansı bir dolayı, təsadüfi, qəsdi zərər üçün, eləcə də əldən çıxmış gəlir və ya itirilmiş məlumatlar, şərəf, ləyaqət və ya işgüzar nüfuzun zədələnməsinə səbəb olan hallar üçün məsuliyyət daşımır.</p><br>
+
+                            <p><b>5.3</b> Saytın bölmələrində digər İnternet resurslarına keçidlər yerləşdirilə bilər. İcraçı, bu resursların mövcudluğu və onlarda yerləşdirilmiş məlumatlar, eləcə də bu resursların istifadəsi ilə bağlı hər hansı nəticələrə görə məsuliyyət daşımır.</p><br>
+
+                            <p><b>5.4</b> Bu İstifadəçi Razılaşmasından və ya onunla əlaqədar yaranacaq bütün mübahisələr danışıqlar yolu ilə həll ediləcəkdir. Razılıq əldə olunmadıqda, bu İstifadəçi Razılaşmasına dair bütün mübahisələr Azərbaycan Respublikasının mövcud qanunvericiliyinə uyğun olaraq həll ediləcəkdir.</p><br>
+
+                            <p><b>5.5</b> Sayt və mobil tətbiqdəki xidmətlərin göstərilməsində nöqsanlara görə İcraçı məsuliyyət daşımır.</p><br>
+
+                            <h6><b>6. İstifadəçi hesabları</b></h6>
+                            <p><b>6.1</b> Maliapp xidmətlərindən istifadə etmək üçün İstifadəçi istifadə qaydalarına əməl edərək istifadəçi hesabı yaratmalıdır. Hesabı qeydiyyatdan keçirmək üçün İstifadəçi adı və şifrəsi yaratmaq, həmçinin müəyyən şəxsi məlumatları təqdim etmək tələb olunur. İstifadəçinin şəxsi məlumatlarının necə emal edildiyinə dair əlavə məlumat Məxfilik Siyasətində təsvir olunmuşdur.</p><br>
+
+                            <p><b>6.2</b> İstifadəçi, hər hansı bir istifadəçi hesabı məlumatlarının və İstifadəçinin istifadəçi hesabına daxil olmaq üçün tələb olunan ekvivalent məlumatların konfidensial saxlanmasını və üçüncü tərəflərin əldə edə bilməyəcəyi təhlükəsiz bir şəkildə istifadə edilməsini təmin etməlidir. İstifadəçinin yalnız bir şəxsi istifadəçi hesabı ola bilər.</p><br>
+
+                            <p><b>6.3</b> Hər hansı bir səlahiyyətsiz şəxsin İstifadəçinin istifadəçi hesabı məlumatlarından xəbərdar olduğundan və ya İstifadəçinin istifadəçi hesabına daxil olmasından şübhələnildiyi təqdirdə, İstifadəçi bu barədə dərhal İcraçıya məlumat verməlidir. İstifadəçi Maliapp xidmətindən hər hansı istifadə üçün və istifadəçi hesabındakı hər hansı fəaliyyət üçün cavabdehdir.</p><br>
+
+                            <h6><b>Ödənişlər</b></h6>
+                            <p><b>7.1</b> MaliApp xidmətləri ödənişli və ya ödənişsiz paketlər şəklində təqdim olunur.</p><br>
+
+                            <p><b>7.2</b> Ödənişli paket üçün, istifadəçi müvafiq ödəmə funksiyasından istifadə edərək Sifarişdə göstərilən müvafiq aylıq xidmət haqqını ödəyəcəkdir. İstifadəçinin ödəmə öhdəliyi Maliapp xidmətindən istifadə üçün mövcud olan 1 (bir) aylıq ödənişsiz sınaq müddəti bitdikdən sonra yaranır.</p><br>
+
+                            <p><b>7.3</b> İstifadəçi bu ödəniş öhdəliyini yalnız təqdim olunan müvafiq onlayn ödəmə üsulundan istifadə etməklə yerinə yetirə bilər.</p>
+
+                            <p><b>7.4</b> İcraçı, ödənişlərin prosessinqi üçün üçüncü tərəf olan ödəniş xidməti təminatçısından istifadə edir.</p><br>
+
+                            <p><b>7.5</b> MaliApp xidmətləri üzrə geri ödəmə mövcud deyil.</p><br>
+
+                            <p><b>7.6</b> İcraçı aylıq ödənişləri avtomatik şəkildə İstifadəçinin daxil etdiyi kart hesabından çıxmaq hüquna malikdir.</p>
+
+                            <p><b>7.7</b> İstifadəçinin daxil etdiyi kart hesabı hər hansı səbəbdən keçərli olmasa istifadəçiyə bu haqda bildiriş göndərilir. Bildirişin göndərilməsindən sonra 7 gün ərzində ödəniş olmadığı halda istifadəçinin hesabına blok qoyulur. 1 ay ərzində ödəniş olmadığı halda icracı istifadəçinin hesabını və ona aid bütün məlumatları silmək hüququna malikdir.</p><br>
+
+                            <p><b>7.8</b>İstifadəçi ayarlar səhifəsindən müvafiq seçimi seçərək abunəliyini istənilən vaxt bağlaya bilər. Ödənişli abunəliklər ən geci gələn ödəniş tarixindən 24 saat əvvəl bağlanmalıdır. Əks təqdirdə gələn ayın ödənişi İstifadəçinin daxil etdiyi kart hesabından çıxılır.</p><br>
+
+                            <p><b>7.9</b> İstifadəçi ayarlar səhifəsindən müvafiq seçimi seçərək ödənişli abunəliyini pulsuz abunəliklə əvəz edə bilər. Ödənişli abunəliklər ən geci gələn ödəniş tarixindən 24 saat əvvəl əvəz olunmalıdır. Əks təqdirdə gələn ayın ödənişi İstifadəçinin daxil etdiyi kart hesabından çıxılır.</p><br>
+
+                            <h6><b>Şikayətlər</b></h6>
+                            <p><b>8.1</b> Maliapp xidmətləri istənilən vaxt dayandırıla və ya daimi olaraq ləğv oluna bilər. Maliapp xidmətləri həmçinin müvəqqəti olaraq dayandırıla bilər. İcraçı, xidmətləri vaxtlı-vaxtında və yanlışsız təmin etmək üçün ağlabatan səy göstərdiyi təqdirdə, bu Razılaşmada açıq şəkildə göstərilməyən bütün bəyanlardan və zəmanətlərdən imtina edir.</p><br>
+
+                            <p><b>8.2</b> Xidmətlərin yerinə yetirilməsində çatışmazlıqlar aşkar edən İstifadəçi hər hansı bir şikayətini İcraçıya qeyd edilmiş nöqsanların dəqiq təsvirləri ilə gecikmədən təqdim etməlidir. Xidmətlərdə aşkar edilmiş qüsurlar barədə bildiriş qüsurların aşkar edildiyi andan etibarən ağlabatan müddət ərzində, lakin aşkar edildikdən sonra iki aydan gec olmayaraq irəli sürülmüş olmalıdır.</p><br>
+
+                            <p><b>8.3</b> İcraçı, onun niyyəti və ya kobud səhlənkarlığı nəticəsində yaranan məsuliyyət və ya tətbiq olunan qanunvericiliyə uyğun olaraq istisna edilə bilməyən və ya məhdudlaşdırıla bilməyən hər hansı digər məsuliyyət istisna olmaqla, İstifadəçinin və ya üçüncü tərəfin Maliapp xidmətləri ilə əlaqəli çəkə biləcəyi  zərər və ya ziyana görə hər hansı məsuliyyət daşımır.</p><br>
+
+                            <h6><b>9. Yekun müddəalar</b></h6>
+                            <p><b>9.1</b> Maliapp.az saytı və Maliapp mobil tətbiqi SOFTECH MMC şirkətinin (VÖEN 1306839991) mülkiyyətidir.</p><br>
+
+                            <p><b>9.2</b> Bu Razılaşma Azərbaycan Respublikasının qanunlarına uyğun olaraq tənzimlənir və şərh olunur. Bu Razılaşma ilə tənzimlənməyən məsələlər Azərbaycan Respublikasının qanunvericiliyinə uyğun olaraq həll edilir. Bu Razılaşma ilə tənzimlənən münasibətlərdən irəli gələn bütün mübahisələr Azərbaycan Respublikasının mövcud qanunvericiliyi ilə müəyyən edilmiş qaydada həll edilir.</p><br>
+
+                            <p><b>9.3</b> Saytdan və mobil tətbiqdən istifadə etmək məqsədindən asılı olmayaraq, İstifadəçi Razılaşması bütün İstifadəçilər üçün tətbiq olunur. İstifadəçi Razılaşmanı qəbul etmədikdə Saytdan istifadəni dərhal dayandırır. Sayt Avropa İttifaqının (Aİ) vətəndaşları və ya AB ölkələrindən hər hansı birinin ərazisində olan şəxslər üçün nəzərdə tutulmur. Bu cür İstifadəçilər saytdakı qeydiyyat prosedurundan keçməməli və Saytdan hər hansı bir məqsəd üçün istifadəni dərhal dayandırmalıdırlar.</p><br>
+
+                            <p><b>9.4</b> İcraçı istənilən vaxt əvvəlcədən və ya sonradan xəbərdarlıq etmədən İstifadəçi Razılaşmasında dəyişiklik etmək və ya əlavə etmək hüququnu özündə saxlayır. Bu cür dəyişikliklər Razılaşmanın yeni versiyasının saytda yerləşdirildiyi tarixdən etibarən 3 (üç) gün keçdikdən sonra qüvvəyə minir. İstifadəçi, İstifadəçi Razılaşmasındakı dəyişiklikləri mütəmadi olaraq yoxlamalıdır. İstifadəçi Razılaşmasında dəyişiklik edildikdən sonra saytdan və mobil tətbiqdən istifadənin davam etdirilməsi, İstifadəçinin bütün dəyişiklikləri qəbul etdiyini və onlarla razı olduğu mənasını daşıyır. İstifadəçi dəyişikliklərlə razı deyildirsə, növbəti hesablama müddətindən etibarən saytdan və mobil tətbiqdən istifadə etməkdən imtina etməli, saytın materiallarını və xidmətlərini istifadə etməyi dayandırmalıdır.</p><br>
+
+                            <p><b>9.5</b> Əgər İstifadəçi (i) Maliapp xidmətlərindən sui-istifadə edərsə və ya Maliapp xidmətlərindən istifadəyə və ya İcraçının əməkdaşlarına hər hansı xəsarət vura və ya zərər vurarsa, (ii) Maliapp xidmətlərindən istifadə edərkən İstifadəçinin dələduzluq hərəkətlərinə yol verdiyinə İcraçının əsaslı inancı varsa, (iii) İstifadəçi saxta sifariş yerləşdirərsə və ya bu İstifadəçi Razılaşmasından irəli gələn öhdəliklərinə başqa şəkildə əməl etmədikdə, (iv) Sifarişin düzgünlüyünə və ya həqiqiliyinə dair əsaslı şübhə olduqda, İcraçı İstifadəçini dərhal Maliapp xidmətindən çıxarmaq və ya İstifadəçidən istənilən sifarişləri rədd etmək və ya ləğv etmək hüququna malikdir.</p><br>
+
+                            <p><b>9.6</b> Məxfilik Siyasəti İstifadəçi Razılaşmasının ayrılmaz tərkib hissəsi hesab olunur.</p><br>
+
+                            <p><b>9.7</b> Məhkəmə tərəfindən İstifadəçi Razılaşmasının hər hansı müddəasının etibarsız hesab edilməsi bütün Razılaşmanın etibarsızlığına səbəb olmayacaqdır.</p><br>
+
+                            <p><b>9.8</b> İstifadəçi saytın və mobil tətbiqin bütün materialları və xidmətlərinin və ya onların hər hansı bir hissəsinin reklamla müşayiət oluna biləcəyini qəbul edir. İstifadəçi İcraçının bu reklam üçün heç bir məsuliyyət daşımadığını və bu reklamla əlaqədar heç bir öhdəliyə malik olmadığını qəbul edir.</p><br>
+
+                            <p><b>9.9</b> Bu Razılaşmanın müddəaları İstifadəçi ilə İcraçı arasında agentlik, tərəfdaşlıq, birgə fəaliyyət, əmək münasibətlərinin və ya Razılaşmada açıq şəkildə nəzərdə tutulmayan digər hüquqi münasibətlərin yaranması kimi başa düşülə bilməz.</p><br>
+
+                            <p><b>9.10</b> İcraçı və İstifadəçi arasında elektron poçt vasitəsilə mesaj mübadiləsi yolu ilə əldə edilmiş razılıqlar yazılı razılaşma kimi tanınmalıdır. Saytın və mobil tətbiqin istifadəsi və İstifadəçi Razılaşması ilə əlaqədar İcraçı ilə əlaqə <span class="color-green">support@maliapp.az</span> və ya İsmayılbəy Qutqaşınlı 30 küçəsi, Yasamal, Bakı, Azərbaycan ünvanına göndərə bilər.</p>
+
+                        </div>
+                    </div>   
+                    <div class="tab-pane fade" id="termCond">
+                        <div>
+                            <p>Fərdi məlumatlar haqqında bu Məxfilik Siyasəti (bundan sonra "Məxfilik Siyasəti"), <a href="/" class="color-green">www.maliapp.az</a> domenində yerləşən Maliapp veb saytının, həmçinin Maliapp mobil tətbiqinin (bundan sonra “Maliapp”) istifadəçisinin sayt və xidmətlərdən istifadə edərkən toplanan fərdi məlumatları ilə əlaqədardır.</p><br> 
+                            <p>Hazırki Məxfilik Siyasətində “xidmətlər” ifadəsi veb sayt və mobil tətbiq üzərindən istifadəçiyə təqdim olunan xidmətlərə birgə istinad edir.</p><br>
+                            <p>Hazırki Məxfilik Siyasətində “istifadəçi” ifadəsi Maliapp veb saytı və Maliapp mobil tətbiqinin müştərilərinə, nümayəndələrinə və müştəri təşkilatlarının digər səlahiyyətli istifadəçilərinə, potensial müştərilərə və Maliapp xidmətləri istifadəçilərinə istinad edir.</p><br>
+                            <p>Hazırki Məxfilik Siyasətində “fərdi məlumatlar” ifadəsi istifadəçinin kimliyini birbaşa və ya dolayısı ilə müəyyənlişdərməyə imkan verən istənilən məlumatlara istinad edir.</p><br>
+                            <p>Hazırki Məxfilik Siyasəti məlumatların işlənməsi prosesində və ya başqa şəkildə dəyişiklikləri əks etdirmək üçün vaxtaşırı olaraq Şirkət tərəfindən birtərəfli qaydada yenilənə bilər.</p><br>
+                            <p>Maliapp.az veb saytı və Maliapp mobil tətbiqi SOFTECH MMC şirkətinin (bundan sonra “Şirkət”) rəsmi mülkiyyətidir. İstifadəçilərin fərdi məlumatlarının işlənməsi ilə əlaqədar olaraq SOFTECH MMC məlumat nəzarətçisi kimi çıxış edir. Bu o deməkdir ki, SOFTECH MMC fərdi məlumatların işlənməsinin məqsəd və işlənmə vasitələrini müəyyən edir.</p><br>
+                            <p>Maliapp.az saytı və Maliapp mobil tətbiqi Azərbaycanda olan istifadəçilər üçün nəzərdə tutulmuşdur. Avropa İttifaqının (Aİ) vətəndaşları və ya AB ölkələrindən hər birinin ərazisində olan şəxslər üçün nəzərdə tutulmur. Bu cür istifadəçilər saytdakı qeydiyyat prosedurundan keçməməli və veb saytdan hər hansı bir məqsəd üçün istifadəni dərhal dayandırmalıdırlar.</p><br>
+                            <h6><b>1. Ümumi müddəalar</b></h6>
+                            <p><b>1.1.</b> İstifadəçi (fərdi məlumatların subyekti) Maliapp-dən istifadə etdikdə və qeydiyyatdan keçdikdə hazırki Məxfilik Siyasətinə və Azərbaycan Respublikasının qanunvericiliyinə uyğun olaraq Şirkət tərəfindən istifadəçinin fərdi məlumatları toplanır.</p><br> 
+                            <p><b>1.2.</b> Maliapp-dən istifadə edən istifadəçi, Maliapp-dən istifadə etməklə məlumatlarını daxil edərək və ya qeydiyyatdan keçərək bu Məxfilik Siyasəti ilə və onun şərtləri ilə razılaşdığını təsdiqləyir və fərdi məlumatların toplanmasına və istifadəsinə “Fərdi məlumatlar haqqında" Qanunun 8.1-ci maddəsinə uyğun olaraq yazılı razılığını vermiş hesab olunur.</p><br> 
+                            <p><b>1.3.</b> Məxfilik Siyasətinə edilmiş dəyişiklərlə razı olmadıqda, istifadəçi saytdan və mobil tətbiqdən istifadə etməyi dərhal dayandırmalıdır.</p><br>
+                            <p><b>1.4.</b> İstifadəçi, "Fərdi məlumatlar haqqında" Qanunun 7.2-ci maddəsinə uyğun olaraq məlumatların toplanmasına və istifadəsinə yazılı etirazını Şirkətə təqdim edə bilər. İstifadəçi, fərdi məlumatların emalına etiraz etməsi ilə əlaqədar "fərdi məlumatların emalına razılığın ləğvi" başlıqlı məktubunu Maliapp.az-ın support@maliapp.az email ünvanına və ya İsmayılbəy Qutqaşınlı 30, Yasamal, Bakı, Azərbaycan ünvanına göndərə bilər.</p><br>
+                            <p><b>1.5.</b> Bu Məxfilik Siyasəti yalnız Maliapp-ə tətbiq olunur. Şirkət, istifadəçi tərəfindən Maliapp-də mövcud olan keçidlər (linklər) vasitəsilə açılan üçüncü şəxslərin saytlarına nəzarət etmir və məsuliyyət daşımır.</p><br>
+                            <p><b>1.6.</b> Şirkət, istifadəçinin təqdim etdiyi fərdi məlumatların düzgünlüyünü yoxlamır. Saytda yüklənən hər hansı fərdi məlumat "olduğu kimi" qəbul edilir və elektron poçt ünvanı (e-mail) və ya telefon nömrəsi istisna olmaqla, dəqiqlik üçün əvvəlcədən yoxlanılmır.</p><br>
+                            <h6><b>2. Məxfilik Siyasətinin mövzusu</b></h6>
+                            <p><b>2.1.</b> Bu Məxfilik Siyasəti, Şirkətin istifadəçi tərəfindən qeydiyyatdan keçərkən (hesab yaradılması) və Maliapp-də göstərilən xidmətlərdən istifadə edərkən təqdim etdiyi fərdi məlumatların məxfiliyinin mühafizəsi üçün öhdəliyini müəyyən edir.</p><br>
+                            <p><b>2.2.</b> Saytın və mobil tətbiqin müəyyən funskiyalarından istifadə etmək üçün istifadəçilərdən əlavə məlumatları təqdim etmək tələb oluna bilər.</p><br>
+                            <p><b>2.3.</b> Bu Məxfilik Siyasəti çərçivəsində emalına icazə verilmiş fərdi məlumatlar, istifadəçi tərəfindən saytda qeydiyyat formasını və digər formaları doldurmaqla təqdim edilir, habelə istifadəçinin seçdiyi xidmətlərdən asılı olaraq təqdim olunmalı məlumatları əhatə edir:</p><br>
+                            <p><b>2.3.1.</b> Qeydiyyat və giriş üçün tələb olunan məlumatlar:<br>
+                            &nbsp&nbsp●   İstifadəçinin adı və soyadı<br> 
+                            &nbsp&nbsp●   İstifadəçinin elektron poçt ünvanı (e-mail)<br>
+                            &nbsp&nbsp●   İstifadəçinin telefon nömrəsi</p><br>
+                            <p><b>2.3.2.</b> Xidmətlərin həyata keçirilməsi üçün sənəd tərtib edəndə tələb olunan və sənəddə əks olunan məlumatlar:</p><br>
+                            <p><b>2.3.3.</b> Xidmət səviyyəsinin artırılması məqsədi ilə Maliapp xidmətlərinin istifadəsi ilə bağlı analitik məlumatlar (məxfiliyin tam qorunması şərti ilə)</p><br>
+                            <p><b>2.3.4.</b> Bazar araşdırması və statistik məqsədlə istifadəçilərin maliyyə vəziyyətləri ilə bağlı istənilən analitik məlumat (məxfiliyin tam qorunması şərti ilə)</p><br>
+                            <p><b>2.4.</b> Sayt, sistemin statistik göstəricisinin ("pixel") quraşdırıldığı səhifələrə daxil olarkən avtomatik olaraq ötürülən məlumatların mühafizəsini təmin edir:<br>
+                            &nbsp&nbsp●   İP ünvan<br> 
+                            &nbsp&nbsp●   Tanımlama (Cookie) məlumatları<br>
+                            &nbsp&nbsp●   Brauzer haqqında məlumatlar (və ya sayta girişi təmin edən başqa proqramlar)<br>
+                            &nbsp&nbsp●   Daxil olma vaxtı<br>
+                            &nbsp&nbsp●   İstifadə olunan brauzerler, əməliyyat sistemləri və fiziki qurğular haqqında məlumatlar<br>
+                            &nbsp&nbsp●   Reklam blokunun yerləşdiyi səhifənin ünvanı<br>
+                            &nbsp&nbsp●   Referrer (əvvəlki səhifənin ünvanı)</p><br>
+                            <p><b>2.6.</b> Sayt, istifadəçilərin IP-ünvanlarına dair statistika toplayır. Bu məlumat texniki problemləri müəyyən etmək və həll etmək və xidmətlərin yaxşılaşdırılması üçün istifadə olunur.</p><br>
+                            <h6><b>3. İstifadəçinin fərdi məlumatlarının toplanılması və işlənilməsinin məqsədləri və hüquqi əsasları</b></h6>
+                            <p><b>3.1.</b> Fərdi məlumatların işlənilməsi Şirkətin öhdəliklərini yerinə yetirməsi üçün, saytın və mobil tətbiqin tam fəaliyyətini təmin etmək üçün, xidmət səviyyəsinin artırılması üçün, həmçinin aşağıdakı digər məqsədlər üçün həyata keçirilir.<br>
+                            &nbsp&nbsp●   Maliapp xidmətlərini təmin etmək və müqavilə öhdəliklərini yerinə yetirmək üçün (hüquqi əsas: müqavilənin icrası və qanuni maraq) <br>
+                            &nbsp&nbsp●   Qanuni öhdəliklər üçün – buraya mühasibat uçotu öhdəlikləri üçün emal olunmuş məlumatlar daxildir (hüquqi əsas: qanuni öhdəliyə əməl etmə) <br>
+                            &nbsp&nbsp●   İddialara baxılması və hüquqi proseslər üçün – buraya iddiaların baxılması, borcların yığılması və hüquqi proseslərlə əlaqədar fərdi məlumatlar daxildir (hüquqi əsas: qanuni maraq) <br>
+                            &nbsp&nbsp●   Keyfiyyətin yaxşılaşdırılması və tendensiyanın təhlili üçün – xidmətlərin istifadəçinin ehtiyaclarına uyğun olmasını təmin etmək üçün fərdi məlumatlardan müştəri məmnuniyyəti ilə bağlı sorğular kimi məqsədlər üçün istifadə edilə bilər (hüquqi əsas: qanuni maraq) <br>
+                            &nbsp&nbsp●   Ödənişlərin alınması və emalı, vergilərin və ya vergi güzəştlərinin təsdiqi, ödənişə etiraz, istifadəçinin kredit hüququnun müəyyən edilməsi üçün (hüquqi əsas: qanuni maraq)<br>
+                            &nbsp&nbsp●   İstifadəçilərin maliyyə vəziyyətləri haqda statistik məlumatların toplanması və analitik məqsədlər üçün istifadəçilərə və ya  üçüncü şəxslərə (istifadəçinin aydın razılığı ilə) təqdim olunması (hüquqi əsas: qanuni maraq)<br>
+                            &nbsp&nbsp●   Saytın texniki dəstək xidmətinə müraciət zamanı istifadəçi ilə əlaqə saxlamaq (saytın istifadəsinə dair bildirişlərin, təkliflərin və yeniliklərin yönləndirilməsi daxil olmaqla) </p><br>
+                            <h6><b>4. Fərdi məlumatların işlənilməsinin üsulları və müddətləri</b></h6>
+                            <p><b>4.1.</b> İstifadəçinin fərdi məlumatlarının emalı, vaxt məhdudiyyəti olmadan hər hansı bir qanuni yolla, o cümlədən şəxsi məlumatların informasiya sistemlərində avtomatlaşdırma vasitələrindən istifadə etməklə və ya bu cür vasitələrdən istifadə etməməklə aparılır. </p><br>
+                            <p><b>4.2.</b> Saytda və mobil tətbiqdə istifadəçi tərəfindən təqdim olunan məlumatlar saytın və mobil tətbiqin istifadəsi müddətində və istifadəçinin hesabını ləğv etdiyi halda, Şirkət tərəfindən müəyyən edilmiş lakin hesabın silinmə tarixindən sonra 90 (doxsan) gündən artıq olmayan müddət ərzində saxlanılır.</p><br>
+                            <p><b>4.3.</b> Şirkət, toplanan fərdi məlumatların yeganə sahibidir və yalnız qanunvericiliklə müəyyən edilmiş hallarda, istifadəçi üçün xidmətlərin yerinə yetirilməsi məqsədilə üçüncü şəxslərə ötürə bilər.</p><br>
+                            <p><b>4.4.</b> Şirkət, “Fərdi məlumatlar haqqında” Azərbaycan Respublikası Qanununun 13-cü maddəsinə müvafiq olaraq fərdi məlumatları aşağıdakı hallarda üçüncü şəxslərə ötürə bilər:<br>
+                            &nbsp&nbsp●   İstifadəçi razılıq verdikdə<br>
+                            &nbsp&nbsp●   Üçüncü şəxsə verilmə Maliapp-in hər hansı xidmətindən istifadəçi tərəfindən istifadə üçün zəruri olarsa<br>
+                            &nbsp&nbsp●   Qanunvericiliklə müəyyən edilmiş hallarda</p><br>
+                            <p><b>4.5.</b> Dövlət orqanlarının tələbi ilə istifadəçilərə aid fərdi məlumatların ötürülməsi Azərbaycan Respublikasının qanunvericiliyində nəzərdə tutulmuş qaydada həyata keçirilir.</p><br>
+                            <p><b>4.6.</b> Şirkət, istifadəçinin şəxsi məlumatlarının emalında qeyri-qanuni açıqlanmasının, təsadüfi məhvinin, dəyişdirilməsinin, bloklanmasının, təkrarlanmasının, yayılmasının və üçüncü şəxslərin digər qeyri-qanuni hərəkətlərinin qarşısının alınması üçün müəyyən zəruri təşkilati və texniki müdafiə tədbirləri görür. </p><br>
+                            <p><b>4.7.</b> Şirkət, şəxsi məlumatların təhlükəsizliyini təmin etmək üçün müxtəlif təhlükəsizlik əlavələrindən istifadə edir. Yalnız xüsusi tapşırıqla çalışan şəxslər (məsələn, texniki dəstək və ya ödənişlərin həyata keçməsi) şəxsi məlumatlara giriş edə bilər. Məxfi məlumatların qeyd olunduğu serverlər və kompüterlər təhlükəsiz mühitdə saxlanılır.</p><br>
+                            <p><b>4.8.</b> Fərdi məlumatların ötürülməsinə razılıq istifadəçi tərəfindən ləğv edilə bilər. Şirkət, fərdi məlumatların verilməsi üçün istifadəçinin razılığının ləğv edilməsi barədə məlumat aldıqdan sonra bu məlumatların ötürülməsini dərhal dayandırmağı öhdəliyinə götürür.</p><br>
+                            <p><b>4.9.</b> İstifadəçi məlumat sistemində öz fərdi məlumatlarının toplanması, üçüncü şəxslərə verilməsi və emalı üçün qanuni əsaslandırmanı tələb edə bilər və bu məlumatın üçüncü tərəflərə verilməsi, emalı və toplanmasının onun üçün hansı hüquqi nəticələr yarada biləcəyi barədə məlumat ala bilər. (Hüquqi əsas - Azərbaycan Respublikasının Nazirlər Kabineti tərəfindən təsdiq edilmiş, “Korporativ informasiya sistemlərində toplanılmış və işlənilən fərdi məlumatların ödənişli əsaslarla üçüncü şəxslərə verilməsi Qaydası”).</p><br>
+                            <p><b>4.10.</b> Fərdi məlumatların itirilməsi və ya icazəsiz şəkildə açıqlanması hallarında, Şirkət fərdi məlumatların itirilməsi və ya açıqlanması barədə istifadəçiyə bu halın aşkarlanmasından sonra 3 (üç) iş günü ərzində məlumat verməlidir.</p><br>
+                            <p><b>4.11.</b> Şirkət, istifadəçinin şəxsi məlumatlarının itirilməsi və ya açıqlanması nəticəsində yaranan zərərlərin və ya digər mənfi nəticələrin qarşısını almaq üçün lazımi tədbirləri görür.</p><br>
+                            <p><b>4.12.</b> Fərdi məlumatların toplanması və emalı məqsədlərinə nail olunduqda və ya müvafiq hesab silindikdə və məlumatları saxlama zərurəti aradan qalxdıqda, fərdi məlumatlar dərhal məhv edilir.</p><br>
+                            <h6><b>5. Tanımlama məlumatların istifadəsi</b></h6>
+                            <p><b>5.1.</b> Şirkət, istifadəçilər saytı ziyarət etdikdə statistik məlumatları və digər məlumatları toplamaq və saxlamaq üçün tanımlama məlumatları və veb-mayaklar da daxil olmaqla, müxtəlif texnologiyalardan istifadə edir.</p><br>
+                            <p><b>5.2.</b> Tanımlama məlumatları, Maliapp xidmətlərindən istifadəni asanlaşdırmağa və istifadəçilərin məcmu məlumatlarını yaratmağa imkan verən, istifadəçilərin cihazına göndərilən və saxlanan kiçik mətn sənədləridir. Tanımlama məlumatları istifadəçinin cihazına və ya fayllarına zərər verməyəcəkdir. Bəzi tanımlama məlumatları xidmətlərin istifadəsi və fasiləsiz emalı üçün tələb olunur. Digər tanımlama məlumatları xidmətlərin necə istifadə edildiyi barədə məlumat toplayır, məsələn, xidmətlərin yaxşılaşdırılması üçün hansı məzmunun daha sıx ziyarət olunduğu haqda məlumat.</p><br>
+                            <p><b>5.3.</b> İstifadəçilər veb bələdçisini tanımlama məlumatlarından imtina edilməsinə və ya tanımlama məlumatları göndərildiyi zaman xəbərdaretmə rejiminə uyğunlaşdıra bilər.</p><br>
+                            <p><b>5.4.</b> Tanımlama məlumatları sayta giriş imkanlarını yaxşılaşdırmaq və təkrar sayta dönüşləri müəyyən etmək üçün istifadə olunur və heç bir məxfi məlumatları ötürmür.</p><br>
+                            <p><b>5.5.</b> Tanımlama məlumatlarını dayandırmaq, avtorizasiya tələb edən veb saytın bəzi hissələrinə daxil olmanın qeyri-mümkünlüyü ilə nəticələnə bilər.</p><br>
+                            <h6><b>6. İstifadəçinin hüquqları</b></h6>
+                            <p><b>6.1.</b> “Fərdi məlumatlar haqqında” Azərbaycan Respublikası Qanununun 7-ci maddəsinə əsasən istifadəçinin aşağıdakı hüquqları vardır:<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində olan fərdi məlumatlar barədə məlumat almaq;<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində toplanılmış fərdi məlumatların məzmunu ilə tanış olmaq;<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində fərdi məlumatların toplanılması və işlənilməsi məqsədini, işlənilmə müddətini, üsullarını, onun fərdi məlumatları ilə tanış olmaq icazəsi olan şəxslərin, o cümlədən məlumat mübadiləsi aparılması nəzərdə tutulan informasiya sistemlərinin dairəsini bilmək;<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində toplanılmış və işlənilən fərdi məlumatların dəqiqləşdirilməsini və qanunvericiliklə müəyyən olunmuş hallar istisna olmaqla, məhv edilməsini tələb etmək, habelə həmin məlumatların müəyyən olunmuş qaydada arxivə verilməsi barədə müraciət etmək;<br>
+                            &nbsp&nbsp●   Özü barəsində fərdi məlumatların toplanılmasına və işlənilməsinə qadağan qoyulmasını tələb etmək;<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində toplanılmış və işlənilən fərdi məlumatların əldə edilməsi mənbələri barədə məlumat almaq, həmin məlumatların qanuniliyinin sübuta yetirilməsini tələb etmək;<br>
+                            &nbsp&nbsp●   İnformasiya sistemində özü barəsində toplanılmış və işlənilən fərdi məlumatların mühafizəsini tələb etmək;<br>
+                            &nbsp&nbsp●   Özü barəsində toplanılan və işlənilən fərdi məlumatların olduğu informasiya sistemlərinin uyğunluq sertifikatının mövcudluğu və dövlət ekspertizasından keçirilməsi haqqında məlumat almaq;<br>
+                            &nbsp&nbsp●   “Fərdi məlumatlar haqqında” Qanunla və Azərbaycan Respublikasının başqa normativ hüquqi aktları ilə müəyyən edilmiş digər hüquqlardan istifadə etmək.</p><br>
+                            <h6><b>7. Tərəflərin vəzifələri</b></h6>
+                            <p><b>7.1.</b> İstifadəçi:<br>
+                            &nbsp&nbsp●   Saytdan və mobil tətbiqdən istifadə üçün zəruri olan fərdi məlumatları  düzgün və tam təqdim etmək;<br>
+                            &nbsp&nbsp●   Fərdi məlumatlarda dəyişiklik olan müvafiq dəyişikliyi və əlavəni təqdim etmək.</p><br>
+                            <p><b>7.2.</b> Şirkət:<br>
+                            &nbsp&nbsp●   Topladığı fərdi məlumatı yalnız bu Məxfilik Siyasətinin 3-cü bəndində göstərilən məqsədlər üçün istifadə etmək;<br>
+                            &nbsp&nbsp●   Fərdi məlumatların məxfi saxlanmasını təmin etmək, istifadəçinin əvvəlcədən yazılı razılığı olmadan açıqlamamaq, həmçinin fərdi məlumatları Məxfilik Siyasətinin 4.4. və 4.5.-ci maddələrində nəzərdə tutulmuş hallar istisna olmaqla, fərdi məlumatları üçüncü şəxslərə verməmək, satmamaq, açıqlamamq və ya hər hansı digər formada yaymamaq;<br>
+                            &nbsp&nbsp●   İstifadəçinin fərdi məlumatlarının məxfiliyinin qorunması üçün, istifadə olunan mövcud işgüzar prosedura uyğun tədbirlər görmək; <br>
+                            &nbsp&nbsp●   İstifadəçinin və ya onun qanuni nümayəndəsinin, eləcə də fərdi məlumatların mühafizəsi sahəsində səlahiyyətli orqanın müraciəti və ya sorğusu əsasında, müvafiq istifadəçiyə aid fərdi qeyri-qanuni istifadənin yoxlanılması dövrü ərzində fərdi məlumatların bloklanmasını təmin etmək;<br>
+                            &nbsp&nbsp●   “Fərdi məlumatlar haqqında” Qanunun 12-ci maddəsinə əsasən, Şirkət, istifadəçinin sorğusu daxil olduğu gündən 7 iş günü ərzində ilkin cavab  məktubunu göndərməlidir. İcraçı məlumatların işlənilməsi həcmindən asılı olan müddət ərzində istifadəçiyə aid toplanan fərdi məlumatlar barədə ona məlumat verməli, həmçinin bu Məxfilik Siyasətində göstərilən qaydada onun hüquqlarını təmin etməlidir.</p><br>
+                            <h6><b>8. Tərəflərin məsuliyyəti</b></h6>
+                            <p><b>8.1.</b> İstifadəçinin fərdi məlumatlarının istifadəsi ilə bağlı yaranan bütün anlaşılmazlıqlar və mübahisələr İstifadəçi Razılaşmasında göstərilən qaydada həll edilir və Şirkət, Azərbaycan Respublikası Qanunvericiliyi ilə nəzərdə tutulmuş məsuliyyəti daşıyır.</p><br>
+                            <p><b>8.2.</b> Aşağıdakı hallarda Şirkət fərdi məlumatın verilməsi və ya açıqlanmasına görə məsuliyyət daşımır:<br>
+                            &nbsp&nbsp●   Fərdi məlumat ictimai məlumat olmaqla, onun itirilməsindən və ya açıqlanmasından əvvəl ictimaiyyətə məlum olmuşdursa,<br>
+                            &nbsp&nbsp●   İstifadəçidən alınmaqdan əvvəl digər üçüncü şəxs tərəfindən təqdim olunmuşdursa <br>
+                            &nbsp&nbsp●   İstifadəçinin razılığı ilə açıqlanmışdırsa</p><br>
+                            <p><b>8.3.</b> Şirkət, Maliapp-dən qadağan olunmamış formada istifadə nəticəsində üçüncü şəxslər tərəfindən istifadəçi barədə fərdi məlumatların əldə olunmasına və istifadəsinə görə məsuliyyət daşımır.</p><br>           
+                            <p><b>8.4.</b> “Fərdi məlumatlar haqqında” Qanunun 10.1-ci maddəsinə əsasən, fərdi məlumatların toplanılması və işlənilməsi, həmin məlumatların mühafizəsinin tam təmin olunmaması nəticəsində istifadəçiyə dəyən maddi və mənəvi ziyan və onun həcmi məhkəmə tərəfindən müəyyən edilir və qanunvericilikdə nəzərdə tutulmuş qaydada ödənilir.</p><br>
+                            <p><b>8.5.</b> Azərbaycan Respublikasının məhkəmələri bu Məxfilik Siyasətindən irəli gələn və ya əlaqədar olaraq yaranan hər hansı mübahisələrə dair müstəsna səlahiyyətlərə malikdirlər.</p><br>
+                            <h6><b>9. Digər şərtlər</b></h6>
+                            <p><b>9.1.</b> Məxfilik Siyasəti ictimaiyyətə açıq bir sənəddir, onun cari nəşri https://maliapp.az/privacypolicy saytında yerləşir.</p><br>
+                            <p><b>9.2.</b> Şirkət istənilən vaxt əvvəlcədən və ya sonradan xəbərdarlıq etmədən Məxfilik Siyasətinə dəyişiklik etmək və ya əlavə etmək hüququnu özündə saxlayır. Bu cür dəyişikliklər Məxfilik Siyasətinin yeni versiyasının saytda yerləşdirildiyi tarixdən etibarən 3 (üç) gün keçdikdən sonra qüvvəyə minir. İstifadəçi, Məxfilik Siyasətinin dəyişiklikləri mütəmadi olaraq yoxlamalıdır. Məxfilik Siyasətində dəyişiklik edildikdən sonra Maliapp-dən istifadənin davam etdirilməsi, istifadəçinin bütün dəyişiklikləri qəbul etdiyini və onlarla razı olduğu mənasını daşıyır. İstifadəçi dəyişikliklərlə razı deyildirsə, Maliapp-dən istifadə etməkdən imtina etməli, onun materiallarını və xidmətlərini istifadə etməyi dayandırmalıdır.</p><br>
+                            <p><b>9.3.</b> Toplanan məlumatlar, onların istifadəsi və açıqlanması şərtləri haqqında məlumat almaq məqsədi ilə saytı nəzərdən keçirmək İstifadəçinin məsuliyyətidir. Dəyişiklik edilmiş Məxfilik Siyasəti, dəyişikliklər haqqında məlumat alıb almamasından asılı olmayaraq, istifadəçi üçün tətbiq olunur.</p><br>
+                            <p><b>9.4.</b> Bu Məxfilik Siyasəti Azərbaycan Respublikası Qanunvericiliyi ilə tənzimlənir və şərh olunur.</p><br>
+                            <h6><b>10. Əlaqə məlumatları</b></h6>
+                            <p>İstifadəçi, fərdi məlumatların emalı ilə bağlı sorğu və şikayətlərini Şirkətin elektron ünvanına: support@maliapp.az və ya İsmayılbəy Qutqaşınlı 30 küçəsi, Yasamal, Bakı, Azərbaycan ünvanına göndərə bilər.</p>
+
+                        </div>
+                    </div>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success accept-btn">Qəbul et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+
+</body>
+</html>

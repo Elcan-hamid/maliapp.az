@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mali App</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <style>
+    .about-img-design{
+      width:90%;
+      height: auto;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 12px 12px 0 12px;
+    }
+
+  </style>
+</head>
+<body>
+<header class="landing-page-header d-flex align-items-center"MaliApp>
+  <div class="container-fluid" style="width: 90%;">
+    <div class="row d-flex justify-content-between">
+      <div class=" d-flex align-items-center">
+        <a href="/">
+          <img src="./assets/images/maliapp-logo.svg" alt="Mali App Logo">
+        </a>
+      </div>
+      <div class="menu-container">
+        <ul class="main-menu d-flex align-items-center justify-content-center">
+          <li><a href="index.html">Ana səhifə</a></li>
+          <li><a href="index.html#aboutUs">Haqqımızda</a></li>
+          <li><a href="index.html#pricePackages">Qiymət paketləri</a></li>
+          <li class="active-menu-link"><a href="support.html">Dəstək</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center" data-toggle="modal" data-target="#signUp">
+        <button class="free-trial">Pulsuz sına</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="title-mobile-area">
+  <div class="">
+    <div class="fixed-header d-flex justify-content-between align-items-center">
+      <div class="logo-area">
+        <img src="assets/images/maliapp-logo.svg">
+      </div>
+      <ul class="header-mobile-right d-flex align-items-center">
+        <li class="nav-item dropdown notification_dropdown mr-2">
+          <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+            <img src="assets/images/bell.svg">
+            <div class="pulse-css rounded-circle"></div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <ul class="list-unstyled">
+              <li class="dropdown-item d-flex mt-4">
+                <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                  🎉
+                </div>
+                <div class="ml-4">
+                  <div>MaliApp yeniləndi!</div>
+                  <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                  <div class="text-muted">05.01.2020</div>
+                </div>
+              </li>
+              <li class="dropdown-item d-flex mt-4">
+                <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                  <img src="assets/images/notify-hesab.svg">
+                </div>
+                <div class="ml-4">
+                  <div>Hesab-faktura</div>
+                  <div>12345678 nömrəli hesab-faktura gecikir</div>
+                  <div class="text-muted">05.01.2020</div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </li>
+
+        <div class="mobile-navbar">
+          <div class="menu-buttons">
+            <a class="menu"><img src="assets/images/menu.svg"></a>
+            <a class="close-menu hidden"><img src="assets/images/close-menu.svg"></a>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+    <nav>
+      <ul class="mobile-sidenav landing-sidenav mt-3 mb-4">
+        <li class="menu-link">
+          <a href="index.html" class="menu-item">
+            <span class="ml-2">Ana səhifə</span>
+          </a>
+        </li>
+        <li class="menu-link">
+          <a href="index.html#aboutUs" class="menu-item">
+            <span class="">Haqqımızda</span>
+          </a>
+        </li>
+        <li class="menu-link">
+          <a href="index.html#pricePackages" class="menu-item">
+            <span class="ml-2">Qiymət paketləri</span>
+          </a>
+        </li>
+        <li class="menu-link menu-active">
+          <a href="support.html" class="menu-item">
+            <span class="ml-2">Dəstək</span>
+          </a>
+        </li>
+        <li class="menu-link">
+          <a href="blog.html" class="menu-item">
+            <span class="ml-2">Blog</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="support-section">
+  <div class="support-title">
+    <div class="container">
+      <p class="text-muted">
+        <a href="index.html">Ana səhifə</a>
+        <img src="assets/images/landing/right-green.svg" class="mx-2">
+        Haqqımızda
+      </p>
+      <h3 class="font-30">Haqqımızda</h3>
+    </div>
+  </div>
+
+  <div class="container support-content-container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-4 pb-3">
+
+          <img src="./assets/images/about-picture.png" alt="" class="about-img-design">
+
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pb-4 pt-md-4 pt-0">
+        <div class="support-content">
+          <h4 class="font-wei-600">Məqsədimiz 🎯</h4>
+          <p class="pt-4">
+            Maliapp-in məqsədi mikro və kiçik sahibkarların üzləşdiyi çətinlikləri aradan qaldırmaq və onların ölkə iqtisadiyyatına töhfəsini daha da gücləndirməkdir. Bunun üçün maliapp proqram təminatı üzərindən istifadəçilərimizin tələblərinə uyğun bir sıra yüksək səviyyəli xidmətlər göstəririk və onların biznes əməliyyatlarının asanlıqla idarə oluna biləcəyi vahid platforma yaradırıq.
+            Maliapp olaraq biz mikro və kiçik sahibkarların iqtisadiyyatımızda böyük rolu olduğuna inanır və onları dəstəkləməkdən qürur duyuruq.
+          </p>
+
+          <p class="pt-4">
+            Maliapp Softech MMC-in layihəsidir. Softech MMC 2020-ci ilin oktyabr ayında "130683991" VÖEN nömrəsi ilə hüquqi şəxs olaraq qeydiyyatdan keçmişdir. Şirkət ilə əlaqə yaratmaq üçün (+994 12) 585 10 05 nömrəsinə zəng edə bilərsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="support-accordians pb-140">
+  <div class="container">
+    <div class="d-flex justify-content-center pb-4">
+      <h4 class="font-wei-600">Xidmətlər</h4>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-link d-none d-md-flex font-wei-500 font-15">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" data-toggle="pill" href="#fakt" role="tab" aria-selected="true">Fakturalama</a>
+            <a class="nav-link" data-toggle="pill" href="#agree" role="tab" aria-selected="false">Müqavilələr</a>
+            <a class="nav-link" data-toggle="pill" href="#tax" role="tab" aria-selected="false">Vergi</a>
+          </div>
+        </div>
+        <div class="select_wrap select_border select-pills d-md-none mb-4">
+          <ul class="default_option d-flex align-items-center">
+            <li>
+              <div class="option">
+                <p>Fakturalama</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="select_ul ul-pills nav nav-pills" id="pills-tab" role="tablist">
+            <li>
+              <div class="option" data-pill="fakt">
+                Fakturalama
+              </div>
+            </li>
+            <li>
+              <div class="option" data-pill="agree">
+                Müqavilələr
+              </div>
+            </li>
+            <li>
+              <div class="option" data-pill="tax">
+                Vergi
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="fakt">
+            <div class="accordian-container mb-4">
+              <div class="changeArrowEl py-4" data-toggle="collapse" data-target="#support1" aria-expanded="false"
+                   aria-controls="company">
+                <div class="container d-flex justify-content-between align-items-center">
+                  <div class="d-flex">
+                    <span>Fakturalama: Müvafiq məlumatlarınızı daxil edərək peşəkar şəkildə hesab-faktura və alış faktura hazırlayın və onlara bir proqrama cəmləşdirin. Fakturalarınız üzrə gecikən faktuaralar, ən çox alınan mallar, ən böyük alıcılar və sair bu kimi mühüm məlumatlara hesabatlarla və statistik qrafiklər vasitəsilə nəzarət edin. Əlavə olaraq hesab-fakturaları onlayn şəkildə qarşı tərəfə göndərmək və onların əsasında ödəniş qəbul etmək imkanından yararlanın.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="agree">
+            <div class="accordian-container mb-4">
+              <div class="changeArrowEl py-4"  data-target="#support1" aria-expanded="false"
+                   aria-controls="company">
+                <div class="container d-flex justify-content-between align-items-center">
+                  <div class="d-flex">
+                    <span> Bir sıra mühüm müqavilə növlərini avtomatlaşdırılmış şəkildə tərtib edin və qarşı tərəfə göndərin. Üstəlik bütün müqavilələri vahid məkanda cəmləşdirin ki gələcəkdə onları tapmaqda çətinlik çəkməyəsiniz. Maliapp-də yaradılmış müqavilələr üzrə axtarış vermək, düzəliş etmək, ləğv etmək və göndərmək olduqca asandır
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tax">
+            <div class="accordian-container mb-4">
+              <div class="changeArrowEl py-4"  data-target="#support1" aria-expanded="false"
+                   aria-controls="company">
+                <div class="container d-flex justify-content-between align-items-center">
+                  <div class="d-flex">
+                    <span>Vergi hesablamalarını sorğu əsasında avtomatlaşdırılmış şəkildə aparın ki müxtəlif və mürəkkəb vergi öhdəliyini asanlıqla hesabalaysız və nəzarət edəsiz. Maliapp-in bildiriş sistemi sizə vergi öhdəlikləriniz haqqında xatırlatma xarakterli bildirşlər göndərir ki siz vergi ödənişləri vaxtında ödəyəsiniz və bəyannnamələri vaxtında doldurub təqdim edəsiz.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-area d-flex flex-row justify-content-between align-items-center">
+            <div class="footer-logo">
+                <img src="./assets/images/maliapp-logo.svg" alt="">
+                <span class="font-15 text-muted ml-3">© 2021 MaliApp Financial Inc.</span>
+            </div>
+            <div class="social-icons text-muted">
+                <a href="#">
+                    <img src="assets/images/landing/instagram.svg">
+                </a>
+                <a href="#">
+                    <img src="assets/images/landing/facebook.svg">
+                </a>
+                <a href="#">
+                    <img src="assets/images/landing/twitter.svg">
+                </a>
+                <a href="#">
+                    <img src="assets/images/landing/youtube.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/arrow.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

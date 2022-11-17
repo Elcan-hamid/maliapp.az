@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mali App</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+	<div class="sidenav">
+		<div class="menu-logo">
+			<a href=""><img src="../../assets/images/maliapp-logo.svg"></a>
+		</div>
+		<div class="navbar-menu">
+			<div class="side-menu">
+				<ul>
+					<li class="menu-link">
+						<a href="statistika.html" class="menu-item">
+							<img src="../../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+							<span class="ml-2">Statistika</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="alis-faktura.html" class="menu-item">
+							<img src="../../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+							<span class="ml-2">Alış fakturalar</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="hesab-faktura.html" class="menu-item">
+							<img src="../../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+							<span class="ml-2">Hesab-fakturalar</span>
+						</a>
+					</li>
+					<li class="menu-link menu-link-active">
+						<a href="muqavileler.html" class="menu-item">
+							<img src="../../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+							<span class="ml-2">Müqavilələr</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="vergi.html" class="menu-item">
+							<img src="../../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+							<span class="ml-2">Vergi hesablayıcısı</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="hesabatlar.html" class="menu-item">
+							<img src="../../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+							<span class="ml-2">Hesabatlar</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-menu">
+				<ul>
+					<li class="menu-link">
+						<a href="ayarlar.html" class="menu-item">
+							<img src="../../assets/images/sidebar/setting.svg" class="sidebar-svg">
+							<span class="ml-2">Ayarlar</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="title-mobile-area">
+		<div class="">
+			<div class="fixed-header d-flex justify-content-between align-items-center">
+				<div class="logo-area">
+					<img src="../../assets/images/maliapp-logo.svg">
+				</div>
+				<ul class="header-mobile-right d-flex align-items-center">
+					<li class="nav-item dropdown notification_dropdown mr-2">
+		                <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+		                    <img src="../../assets/images/bell.svg">
+		                    <div class="pulse-css rounded-circle"></div>
+		                </a>
+		                <div class="dropdown-menu dropdown-menu-right">
+		                    <ul class="list-unstyled">
+		                        <li class="dropdown-item d-flex mt-4">
+		                            <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+		                            	🎉
+		                            </div>
+		                            <div class="ml-4">
+		                            	<div>MaliApp yeniləndi!</div>
+		                            	<div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+		                        		<div class="text-muted">05.01.2020</div>
+		                            </div>
+		                        </li>
+		                        <li class="dropdown-item d-flex mt-4">
+		                            <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+		                            	<img src="../../assets/images/notify-hesab.svg">
+		                            </div>
+		                            <div class="ml-4">
+		                            	<div>Hesab-faktura</div>
+		                            	<div>12345678 nömrəli hesab-faktura gecikir</div>
+		                        		<div class="text-muted">05.01.2020</div>
+		                            </div>
+		                        </li>
+		                    </ul>
+		                    
+		                </div>
+		            </li>
+
+		            <div class="mobile-navbar">
+			            <div class="menu-buttons">
+			            	<a class="menu"><img src="../../assets/images/menu.svg"></a>
+		            		<a class="close-menu hidden"><img src="../../assets/images/close-menu.svg"></a>
+			            </div>
+		            </div>
+		            
+				</ul>
+			</div>
+			<nav>
+            	<div class="avatar-img changeArrowHover d-flex" style="border-bottom: 1px solid #f2f2f2;padding-bottom: 20px;">
+					<p class="text-white font-weight-bold">FA</p>
+					<span class="mt-3 ml-2">Fuad Aliyev</span>
+                </div>
+                <ul class="mobile-sidenav mt-3 mb-4">
+                	<li class="menu-link">
+						<a href="/statistika.html" class="menu-item">
+							<img src="../../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+							<span class="ml-2">Statistika</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="/alis-faktura.html" class="menu-item">
+							<img src="../../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+							<span class="ml-2">Alış fakturalar</span>
+						</a>
+					</li>
+					<li class="menu-link menu-active">
+						<a href="/hesab-faktura.html" class="menu-item">
+							<img src="../../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+							<span class="ml-2">Hesab-fakturalar</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="/muqavileler.html" class="menu-item">
+							<img src="../../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+							<span class="ml-2">Müqavilələr</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="/vergi.html" class="menu-item">
+							<img src="../../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+							<span class="ml-2">Vergi hesablayıcısı</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="/hesabatlar.html" class="menu-item">
+							<img src="../../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+							<span class="ml-2">Hesabatlar</span>
+						</a>
+					</li>
+					<li class="menu-link">
+						<a href="/ayarlar.html" class="menu-item">
+							<img src="../../assets/images/sidebar/setting.svg" class="sidebar-svg">
+							<span class="ml-2">Ayarlar</span>
+						</a>
+					</li>
+                </ul>
+                <a href="#" class="color-red font-wei-500 font-16">Hesabdan çıxış</a>
+            </nav>
+		</div>
+		<div class="section-title">
+			<h3 class="title font-22">Yeni xidmət müqaviləsi</h3>
+		</div>
+	</div>
+
+	<section>
+		<div class="title-area d-flex justify-content-between">
+			<div class="section-title">
+				<h3 class="title font-22">Yeni xidmət müqaviləsi</h3>
+			</div>
+			<ul class="header-right d-flex">
+				<li class="nav-item dropdown notification_dropdown">
+					<a class="nav-link bell ai-icon my-3" href="#" role="button" data-toggle="dropdown">
+						<img src="../../assets/images/bell.svg">
+						<div class="pulse-css rounded-circle"></div>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+	                    <ul class="list-unstyled">
+	                        <li class="dropdown-item d-flex mt-4">
+	                            <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+	                            	🎉
+	                            </div>
+	                            <div class="ml-4">
+	                            	<div>MaliApp yeniləndi!</div>
+	                            	<div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+	                        		<div class="text-muted">05.01.2020</div>
+	                            </div>
+	                        </li>
+	                        <li class="dropdown-item d-flex mt-4">
+	                            <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+	                            	<img src="../../assets/images/notify-hesab.svg">
+	                            </div>
+	                            <div class="ml-4">
+	                            	<div>Hesab-faktura</div>
+	                            	<div>12345678 nömrəli hesab -faktura gecikir</div>
+	                        		<div class="text-muted">05.01.2020</div>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                    
+	                </div>
+				</li>
+				<li class="nav-item dropdown header-profile">
+					<a class="nav-link" href="#" role="button" data-toggle="dropdown">
+						<div class="avatar-img changeArrowHover d-flex">
+							<p class="text-white font-weight-bold">FA</p>
+							<span class="mt-3 ml-2">Fuad Aliyev</span>
+							<img src="../../assets/images/bottom-arrow.svg" class="ml-3 mb-3 rotateImgHover">
+						</div>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="" class="dropdown-item ai-icon">
+							<p>Ayarlar</p>
+						</a>
+						<a href="" class="dropdown-item ai-icon">
+							<p class="text-danger">Hesabdan çıxış</p>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="alert alert-gray changeArrowEl py-4" data-toggle="collapse" data-target="#company" aria-expanded="false" aria-controls="company">
+						<div class="container d-flex justify-content-between align-items-center">
+							<div class="my-company d-flex align-items-center">
+								<div class="bg-gray circle-icon rounded-circle d-inline-flex justify-content-center align-items-center">
+									<img src="../../assets/images/contracts/info.svg">
+								</div>
+								<h5 class="mt-2">Ümumi məlumatlar</h5>
+							</div>
+							<div>
+								<img src="../../assets/images/top-arrow.svg" class="rotateImgEl">
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse show" id="company">
+						<div class="container">
+							<form action="#">
+								<div class="row mb-4">
+									<div class="form-group col-md-6">
+										<label>Tarix</label>
+										<div class="input-daterange position-relative" id="datepicker">
+											<input type="text" class="form-control text-left" id="datetime" placeholder="Tarix" role="button">
+											<div class="date-icons">
+												<img src="../../assets/images/date-grey.svg" class="mr-2">
+												<img src="../../assets/images/bottom-arrow.svg">
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-6">
+										<label>Şəhər</label>
+										<input type="text" class="form-control" placeholder="Şəhər adını daxil edin">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Müqavilə nömrəsi</label>
+										<input type="text" class="form-control" placeholder="Müqavilə nömrəsini daxil edin">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="card my-4">
+					<div class="alert alert-orange changeArrowEl py-4" data-toggle="collapse" data-target="#tax-cond" aria-expanded="false" aria-controls="tax-cond">
+						<div class="container d-flex justify-content-between align-items-center">
+							<div class="my-company d-flex align-items-center">
+								<div class="company-icon rounded-circle">
+									<img src="../../assets/images/contracts/file.svg">
+								</div>
+								<h5 class="mt-2">Müqavilənin şərtləri</h5>
+							</div>
+							<div>
+								<img src="../../assets/images/top-arrow.svg" class="rotateImgEl">
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse show" id="tax-cond">
+						<div class="container">
+							<form action="#">
+								<div class="d-flex align-items-center">
+									<ul class="nav nav-pills goods-pills my-3" id="pills-tab" role="tablist">
+									  <li class="menu-link position-relative">
+									    <a class="menu-item header-active" data-toggle="pill" href="#mal1">
+									    	1 mal
+									    	<a href="#"><img src="../../assets/images/close-sm.svg" class="goods-icon removeCurrentElement"></a>
+									    </a>
+									  </li>
+									</ul>
+									<button class="addGoodsBtn">
+										<img src="../../assets/images/plus.svg">
+									</button>
+								</div>
+								
+								<div class="tab-content mt-4" id="pills-tabContent">
+									<div class="tab-pane fade active show elementToBeDeleted" id="mal1">
+										<div class="row mb-4">
+											<div class="form-group col-md-6">
+												<label>Müqavilənin adı</label>
+												<input type="text" class="form-control" placeholder="Müqavilə nömrəsini daxil edin">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Şəhər</label>
+												<input type="text" class="form-control" placeholder="Şəhər adını daxil edin">
+											</div>
+											<div class="form-group col-md-6">
+												<label>Qiyməti</label>
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="Qiyməti daxil edin">
+													<div class="input-group-append">
+														<button class="btn dropdown-toggle changeArrowEl" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<div class="valyutaContent">AZN</div>
+															<img src="../../assets/images/bottom-arrow.svg" class="ml-2 rotateImgEl">
+														</button>
+														<div class="dropdown-menu changeValyuta">
+															<a href="#" class="dropdown-item">USD</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group col-md-6">
+												<label>Təhvil vermə müddəti</label>
+												<input type="text" class="form-control" placeholder="Təhvil vermə müddətini daxil edin">
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="card my-4">
+					<div class="alert alert-green changeArrowEl py-4" data-toggle="collapse" data-target="#user" aria-expanded="false" aria-controls="user">
+						<div class="container d-flex justify-content-between align-items-center">
+							<div class="my-company d-flex align-items-center">
+								<div class="user-icon rounded-circle bg-green">
+									<img src="../../assets/images/invoice/user.svg">
+								</div>
+								<h5 class="mt-2">Alan tərəfin məlumatları</h5>
+							</div>
+							<div>
+								<img src="../../assets/images/top-arrow.svg" class="rotateImgEl">
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse show" id="user">
+						<div class="container">
+							<form action="#">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label>Alanın hüquqi təsnifatı</label>
+										<div class="select_wrap select-pills wrap_input">
+									      <ul class="default_option d-flex align-items-center">
+									          <li>
+									              <div class="option">
+									                <p>Alanın hüquqi təsnifatını daxil edin</p>
+									              </div>
+									          </li>
+									      </ul>
+									      <ul class="select_ul ul-pills nav nav-pills" id="pills-tab" role="tablist">
+										      <li>
+									              <div class="option" data-pill="legal">
+									                Hüquqi şəxs
+									              </div>
+									          </li>
+									          <li>
+									              <div class="option" data-pill="individual">
+									                Fiziki şəxs
+									              </div>
+									          </li>
+									          <li>
+									              <div class="option" data-pill="citizen">
+									                Vətəndaş
+									              </div>
+									          </li>
+									      </ul>
+									    </div>
+									</div>
+									<div class="form-group col-md-6">
+										<label>Hüquqi ünvan</label>
+										<input type="text" class="form-control" placeholder="Hüquqi ünvanı daxil edin…">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="tab-content" id="pills-tabContent">
+											<div class="tab-pane fade" id="legal">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>VÖEN</label>
+														<input type="text" class="form-control" placeholder="VÖEN daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Müəssisənin adı</label>
+														<input type="text" class="form-control" placeholder="Müəssisənin adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Təmsil edən şəxsin adı</label>
+														<input type="text" class="form-control" placeholder="Təmsil edən şəxsin adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Təmsil edən şəxsin vəzifəsi</label>
+														<input type="text" class="form-control" placeholder="Təmsil edən şəxsin vəzifəsini daxil edin">
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="individual">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>VÖEN</label>
+														<input type="text" class="form-control" placeholder="VÖEN daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Adı, soyadı, ata adı</label>
+														<input type="text" class="form-control" placeholder="Adı, soyadı, ata adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verən orqanın adı</label>
+														<input type="text" class="form-control" placeholder="Ş/V verən orqanın adını daxil edin">
+													</div>
+													<div class="form-group col-md-3">
+														<label>Ş/V seriyası və nömrəsi</label>
+														<input type="text" class="form-control" placeholder="15563383">
+													</div>
+													<div class="form-group col-md-3">
+														<label>Ş/V verilmə tarixi</label>
+														<input type="date" class="form-control">
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="citizen">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>Adı, soyadı, ata adı</label>
+														<input type="text" class="form-control" placeholder="Adı, soyadı, ata adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verən orqanın adı</label>
+														<input type="text" class="form-control" placeholder="Ş/V verən orqanın adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V seriyası və nömrəsi</label>
+														<input type="text" class="form-control" placeholder="15563383">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verilmə tarixi</label>
+														<input type="date" class="form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h5 class="bank font-15">Bank rekvizitləri</h5>
+								<div class="row mb-4">
+									<div class="form-group col-md-6">
+										<label>Bankın adı və kodu</label>
+										<input type="text" class="form-control" placeholder="Bankın adını və kodunu daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Müxbir hesab</label>
+										<input type="text" class="form-control" placeholder="Müxbir hesabı daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Bankın VÖEN-i</label>
+										<input type="text" class="form-control" placeholder="Bankın VÖEN-ini daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Bankın SWIFT-i</label>
+										<input type="text" class="form-control" placeholder="Bankın SWIFT-ini daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Hesablaşma hesabı</label>
+										<input type="text" class="form-control" placeholder="Hesablaşma hesabını daxil edin...">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="card my-4">
+					<div class="alert alert-green changeArrowEl py-4" data-toggle="collapse" data-target="#sale" aria-expanded="false" aria-controls="sale">
+						<div class="container d-flex justify-content-between align-items-center">
+							<div class="my-company d-flex align-items-center">
+								<div class="user-icon rounded-circle bg-blue">
+									<img src="../../assets/images/invoice/user.svg">
+								</div>
+								<h5 class="mt-2">Satan tərəfin məlumatları</h5>
+							</div>
+							<div>
+								<img src="../../assets/images/top-arrow.svg" class="rotateImgEl">
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse show" id="sale">
+						<div class="container">
+							<form action="#">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label>Satanın hüquqi təsnifatı</label>
+										<div class="select_wrap select-pills wrap_input">
+									      <ul class="default_option d-flex align-items-center">
+									          <li>
+									              <div class="option">
+									                <p>Satanın hüquqi təsnifatını daxil edin</p>
+									              </div>
+									          </li>
+									      </ul>
+									      <ul class="select_ul ul-pills nav nav-pills" id="pills-tab" role="tablist">
+										      <li>
+									              <div class="option" data-pill="debt-legal">
+									                Hüquqi şəxs
+									              </div>
+									          </li>
+									          <li>
+									              <div class="option" data-pill="debt-individual">
+									                Fiziki şəxs
+									              </div>
+									          </li>
+									          <li>
+									              <div class="option" data-pill="debt-citizen">
+									                Vətəndaş
+									              </div>
+									          </li>
+									      </ul>
+									    </div>
+									</div>
+									<div class="form-group col-md-6">
+										<label>Hüquqi ünvan</label>
+										<input type="text" class="form-control" placeholder="Hüquqi ünvanı daxil edin…">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="tab-content" id="pills-tabContent">
+											<div class="tab-pane fade" id="debt-legal">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>VÖEN</label>
+														<input type="text" class="form-control" placeholder="VÖEN daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Müəssisənin adı</label>
+														<input type="text" class="form-control" placeholder="Müəssisənin adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Təmsil edən şəxsin adı</label>
+														<input type="text" class="form-control" placeholder="Təmsil edən şəxsin adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Təmsil edən şəxsin vəzifəsi</label>
+														<input type="text" class="form-control" placeholder="Təmsil edən şəxsin vəzifəsini daxil edin">
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="debt-individual">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>VÖEN</label>
+														<input type="text" class="form-control" placeholder="VÖEN daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Adı, soyadı, ata adı</label>
+														<input type="text" class="form-control" placeholder="Adı, soyadı, ata adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verən orqanın adı</label>
+														<input type="text" class="form-control" placeholder="Ş/V verən orqanın adını daxil edin">
+													</div>
+													<div class="form-group col-md-3">
+														<label>Ş/V seriyası və nömrəsi</label>
+														<input type="text" class="form-control" placeholder="15563383">
+													</div>
+													<div class="form-group col-md-3">
+														<label>Ş/V verilmə tarixi</label>
+														<input type="date" class="form-control">
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="debt-citizen">
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label>Adı, soyadı, ata adı</label>
+														<input type="text" class="form-control" placeholder="Adı, soyadı, ata adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verən orqanın adı</label>
+														<input type="text" class="form-control" placeholder="Ş/V verən orqanın adını daxil edin">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V seriyası və nömrəsi</label>
+														<input type="text" class="form-control" placeholder="15563383">
+													</div>
+													<div class="form-group col-md-6">
+														<label>Ş/V verilmə tarixi</label>
+														<input type="date" class="form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h5 class="bank font-15">Bank rekvizitləri</h5>
+								<div class="row mb-4">
+									<div class="form-group col-md-6">
+										<label>Bankın adı və kodu</label>
+										<input type="text" class="form-control" placeholder="Bankın adını və kodunu daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Müxbir hesab</label>
+										<input type="text" class="form-control" placeholder="Müxbir hesabı daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Bankın VÖEN-i</label>
+										<input type="text" class="form-control" placeholder="Bankın VÖEN-ini daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Bankın SWIFT-i</label>
+										<input type="text" class="form-control" placeholder="Bankın SWIFT-ini daxil edin…">
+									</div>
+									<div class="form-group col-md-6">
+										<label>Hesablaşma hesabı</label>
+										<input type="text" class="form-control" placeholder="Hesablaşma hesabını daxil edin...">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="row my-5">
+					<div class="col-md-12 text-center">
+						<a href="alis-tarixce.html" class="btn mali-btn bg-green">
+							Təsdiqlə
+							<img src="../../assets/images/right-arrow.svg" class="ml-2">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="../../assets/js/app.js"></script>
+<script src="../../assets/js/invoice.js"></script>
+<script src="../../assets/js/purchase.js"></script>
+<script src="../../assets/js/arrow.js"></script>
+<script src="../../assets/js/live-search.js"></script>
+<script>
+	 $(document).ready(function () {
+	    $('.input-daterange').datepicker({
+	        keepEmptyValues: true,
+	        autoclose: true,
+	        todayBtn: "linked",
+	        keyboardNavigation: false,
+	        calendarWeeks: true,
+	        todayHighlight: true,
+	        toggleActive: true,
+	        format: 'dd.mm.yyyy'
+	    });
+	    
+	    $('#datetime').datepicker();
+	   
+	 });
+</script>
+
+</body>
+</html>

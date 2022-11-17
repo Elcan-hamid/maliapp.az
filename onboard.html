@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mali App</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link  rel="stylesheet" href="assets/plugins/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/plugins/slick-theme.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/modal.css"/>
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
+
+    <style>
+        body {
+            background-attachment: fixed;
+            background-image: linear-gradient(
+                    116.92deg,
+                    #24be92 0.78%,
+                    #cef8f4 100.91%
+            );
+            background-repeat: no-repeat;
+            height: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            box-sizing: border-box;
+            /*overflow-y: hidden; !important;*/
+        }
+        .right-area{
+            padding: 46px 0px 0px 30px;
+        }
+
+        .wrapper {
+            display: flex;
+            padding: 48px 188px 48px 188px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            background-color: white;
+        }
+
+        .onboarding {
+            /*width: 69vw;*/
+        }
+
+        .onboarding #myTabs {
+            justify-content: space-between;
+
+        }
+
+        .onboarding .nav-pills a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .onboarding .nav-pills a:hover {
+            color: #24be92;
+        }
+
+        .left-text {
+            background: #ffffff;
+            box-shadow: 0px 0px 30px rgba(1, 50, 36, 0.08);
+            padding:46px 99px 25px 99px;
+        }
+
+        .presentation-section {
+            margin-top: 74px;
+            width: auto;
+            height: 350px;
+        }
+
+        .logo-position {
+            margin-top: 98px;
+        }
+
+        .main-text-color {
+            color: #24be92;
+        }
+
+        .right-content-header{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: #081e2e;
+        }
+
+        .advanced-content-header{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #081E2E;
+        }
+
+        .right-bg {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .right-content-text, .advanced-content-text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+            color: #6D6D6D;
+
+        }
+        #myTabs .active a{
+            color:#24be92;
+        }
+        .chosing-card{
+            margin: 0!important;
+            width: 65%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .wrapper{
+                padding: 36px;
+            }
+
+        }
+    </style>
+
+
+    <style>
+        .mobile-wrapper{
+            display: none;
+            padding: 30px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .mobile-content-body{
+            position: relative;
+            padding: 0 20px 47px;
+            width: 342px;
+            height: 541px;
+        }
+        .mobile-img-panel{
+
+            overflow: hidden;
+        }
+        .mobile-onboarding{
+            background: #fff;
+        }
+        .mbl-header-text{
+            margin-top: 28px;
+            margin-bottom: 22px;
+        }
+        .mbl-lorem-text{
+            margin-bottom: 36px;
+        }
+        .toggle{
+            position: inherit!important;
+        }
+        .title-mobile-area nav{
+            display: none;
+            position: absolute!important;
+            top: 0;
+            left: 0;
+            max-height: 100%;
+            transition: none;
+        }
+        .myfixed-header{
+            top: 0;
+            left: 0;
+            z-index: 200;
+            background-color: #fff;
+            padding: 12px;
+            width: 100%;
+        }
+        nav{
+            top: 182px;
+        }
+        .mbl-header-text{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: #081E2E;
+        }
+        .mbl-lorem-text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+            color: #6D6D6D;
+        }
+
+        .mobile-confirmation-page{
+            display: none;
+            padding: 30px 20px 120px;
+        }
+
+        .mbl-advanced-content-header{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #081E2E;
+            margin-top: 20px;
+        }
+        .mbl-funk-text span{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 25px;
+            color: #081E2E;
+
+        }
+        .mbl-funk-text li{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 12px;
+            color: #646668;
+        }
+        .mbl-right-content-header{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: #081E2E;
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+        .mbl-right-content-text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+            color: #6D6D6D;
+        }
+
+        .mbl-carousel img, .mobile-img-panel video{
+            width: 320px;
+            height: 188px;
+            margin: 0 auto;
+        }
+        .chosing-card{
+            margin: 0!important;
+            width: 65%;
+        }
+
+        .packet-content ul li{
+            margin-bottom: 14px;
+        }
+
+    </style>
+
+    <style>
+        @media screen and (max-width: 834px){
+            .wrapper{
+                display: none;
+            }
+            .mobile-wrapper{
+                display: flex; !important;
+            }
+        }
+        @media screen and (max-height: 650px){
+            .wrapper{
+                padding-top: 26px;
+            }
+            .presentation-section{
+                height: 300px;
+            }
+            .right-content-header{
+                font-size: 26px;
+            }
+            .right-content-text, .advanced-content-text{
+                font-size: 14px;
+            }
+            .left-text{
+                padding: 36px 62px 25px 99px;
+            }
+            .advanced-content-header{
+                font-size: 16px;
+            }
+            .logo-position{
+                margin-top: 48px;
+            }
+            .right-area{
+                padding-top: 6px;
+            }
+            .logo-position img{
+                width: 130px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div>
+        <div class="row onboarding">
+            <div class="col-md-7 left-text">
+                <ul id="myTabs" class="nav nav-pills nav-justified" role="tablist" data-tabs="tabs">
+                    <li class="active" onclick="changeMainTab('first-main-tab', this);">
+                        <a data-toggle="tab" class="presentation">Təqdimat</a>
+                    </li>
+                    <li onclick="changeMainTab('second-main-tab', this);">
+                        <a data-toggle="tab" class="function">Funksiyalar</a>
+                    </li>
+                    <li onclick="changeMainTab('third-main-tab', this);">
+                        <a data-toggle="tab" class="pricepakets">Qiymət Paketləri</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="main-tab-left tab-pane fade in active show" id="first-main-tab-left">
+                        <div class="presentation-section">
+                            <video width="100%" height="100%" controls>
+                                <source src="./assets/images/Maliapp_az.mp4" type="video/mp4"/>
+
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+
+                        <div class="logo-position">
+                            <img src="./assets/images/maliapp-logo.svg" alt=""/>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="main-tab-left tab-pane" id="second-main-tab-left" style="display: none;">
+                        <div role="tabpanel" class="tab-pane fade in active show">
+                            <div class="presentation-section mb-4">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false" >
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img1.svg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img2.svg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img3.svg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img4.svg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img5.svg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img width="349" height="364" class="d-block w-100" src="./assets/images/slider-img6.svg" alt="First slide">
+                                        </div>
+                                    </div>
+                                    <a onclick="changeInnerTab('previous')" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                                       style="filter: invert(56%) sepia(91%) saturate(394%) hue-rotate(112deg) brightness(94%) contrast(79%);">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a onclick="changeInnerTab('next')" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                                       style="filter: invert(56%) sepia(91%) saturate(394%) hue-rotate(112deg) brightness(94%) contrast(79%);">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--                           logo-->
+                            <div class="logo-position" style="margin-top: 128px">
+                                <img src="./assets/images/maliapp-logo.svg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="main-tab-left tab-pane" id="third-main-tab-left" style="display: none;">
+
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12 mt-4 py-2">
+                                    <ul class="chosing-card nav nav-pills"  role="tablist">
+                                        <li>
+                                            <a href="#premium2" data-toggle="pill" class="nav-link active"
+                                               id="paket-premium"
+                                               style="background-color: var(--main-color) !important;color: #f1f1f1;"
+                                               onclick="selectPaket('premium')"
+                                            >Premium</a>
+                                        </li>
+                                        <li>
+                                            <a href="#free2" data-toggle="pill" class="nav-link"
+                                               id="paket-free"
+                                               onclick="selectPaket('free')"> Pulsuz</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row tab-content d-flex">
+                                <div class="col-md-12 col-lg-10 tab-pane fade show active" id="premium2"
+                                     role="tabpanel">
+
+                                    <div class="card">
+                                        <div class="packet-header d-flex flex-column">
+                                            <div class="color-green font-weight-bold">PREMIUM PAKET</div>
+                                            <div class="card-pricing">16 AZN <span class="font-14 text-muted">/
+                                                        Aylıq</span></div>
+                                            <div class="mt-2"><span class="color-green font-weight-bold">2 həftə
+                                                        pulsuz</span> sınaq
+                                                müddət</div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="packet-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Sənəd yaratmaq</div>
+                                                    </div>
+                                                    <p style="color: #24be92 !important; margin: 0 0 0 30px !important;">Limitsiz</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Hər növ vergilərin hesablanması</div>
+                                                    </div>
+                                                    <p style="color: #24be92 !important; margin: 0 0 0 30px !important;">Limitsiz</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot statistikalarının izlənməsi</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 col-lg-10 tab-pane fade" id="free2" role="tabpanel">
+
+                                    <div class="card">
+                                        <div class="packet-header d-flex flex-column">
+                                            <div class="text-muted font-weight-bold">SADƏ PAKET</div>
+                                            <div class="card-pricing">Pulsuz</div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="packet-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Sənəd yaratmaq</div>
+                                                    </div>
+                                                    <p style="margin: 0 0 0 30px !important; color: #24be92">Ayda 10 dəfə</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Hər növ vergilərin hesablanması</div>
+                                                    </div>
+                                                    <p style="margin: 0 0 0 30px !important; color: #24be92">Ayda 1 dəfə</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot statistikalarının izlənməsi</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="logo-position">
+                                <img src="./assets/images/maliapp-logo.svg" alt=""/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5 right-bg">
+
+
+                <div class="right-area">
+
+                    <div class="main-tab-content" id="first-main-tab" >
+                        <div>
+                            <p class="right-content-header">
+                                Maliapp-ə<br/>
+                                xoş gəldiniz
+                            </p>
+
+                            <p class="right-content-text mb-4">
+                                Maliapp mikro və kiçik sahibkarların <br> mühasibatlıq işlərini asanlaşdıran ən müasir
+                                <br> proqram təminatıdır.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="advanced-content-header">
+                                Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                   placeholder="Ad, Soyad" required>
+                            <input type="text" name="name" maxlength="500" class="form-control"
+                                   placeholder="Email" required>
+                        </div>
+
+                        <button class="btn mali-btn bg-green mt-5" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+                    </div>
+
+                    <div class="main-tab-content" id="second-main-tab" style="display: none;">
+                        <div class="inner-tab">
+                            <div>
+                                <p class="right-content-header">
+                                    Əməliyyatlarınızı avtomatik <br> olaraq rəsmiləşdirin
+                                </p>
+
+                                <p class="right-content-text mb-4">
+                                    Əməliyyatlarınız əsasında formalaşan <br> hesabatlar və statistik göstəricilər sayəsində
+                                    <br> biznesinizin inkişafı üçün yeni fürsətlər <br> aşkarlayın. </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Ad, Soyad" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Email" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+                        <div class="inner-tab" style="display: none;">
+                            <div>
+                                <p class="right-content-header">
+                                    Biznesinizə onlayn <br> nəzarət edin
+                                </p>
+
+                                <p class="right-content-text mb-5">
+                                    Əməliyyatlarınız əsasında formalaşan <br> hesabatlar və statistik göstəricilər sayəsində
+                                    <br> biznesinizin inkişafı üçün yeni fürsətlər <br> aşkarlayın. </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Adınızı daxil edin" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Adınızı daxil edin" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+                        <div class="inner-tab" style="display: none;">
+                            <div>
+                                <p class="right-content-header">
+                                    Anbarınızı onlayn <br> idarə edin
+                                </p>
+
+                                <p class="right-content-text mb-5">
+                                    İlkin anbar qalığını Maliapp-ə yükləyərək <br> satış və alış əməliyyatlarınız əsasında
+                                    <br> anbarınızı avtomatik yeniləyin.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Adınızı daxil edin" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Adınızı daxil edin" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+                        <div class="inner-tab" style="display: none;">
+                            <div>
+                                <p class="right-content-header">
+                                    Avtomatik elektron <br> qaimə göndərin
+                                </p>
+
+                                <p class="right-content-text mb-5">
+                                    Satışlarınız əsasında tərtib olunan elektron qaimələri vergi orqanına avtomatik göndərin.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Adınızı daxil edin" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Adınızı daxil edin" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+                        <div class="inner-tab" style="display: none;">
+                            <div>
+                                <p class="right-content-header">
+                                    Ödənişlərinizi onlayn qəbul edin
+                                </p>
+
+                                <p class="right-content-text mb-4">
+                                    Müştərilərinizə hesab-fakturalarınızı email üzərindən göndərərək ödənişlərinizi onlayn qaydada qəbul edin.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Adınızı daxil edin" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Adınızı daxil edin" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+                        <div class="inner-tab" style="display: none;">
+                            <div>
+                                <p class="right-content-header">
+                                    Vergi öhdəliyinizi tam dəqiq hesablayın
+                                </p>
+
+                                <p class="right-content-text mb-4">
+                                    Vergi hesablayıcısı funksiyası sayəsində vergilərinizi qanunvericiliyə uyğun olaraq tam dəqiq hesablayın və ödəniş vaxtı gələndə bildiriş alın.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="advanced-content-header">
+                                    Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                       placeholder="Adınızı daxil edin" required>
+                                <input type="text" name="name" maxlength="500" class="form-control"
+                                       placeholder="Adınızı daxil edin" required>
+                            </div>
+
+                            <button class="btn mali-btn bg-green mt-5"  type="submit" style="width: 100%;">
+                                Öncədən sifariş et
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="main-tab-content" id="third-main-tab" style="display: none;">
+                        <div>
+                            <p class="right-content-header">
+                                Qiymət <br> paketləri
+                            </p>
+
+                            <p class="right-content-text mb-4">
+                                Tələblərinizə uyğun paketi seçərək müvafiq <br> aylıq abunəlik haqqını ödəyin.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="advanced-content-header">
+                                Öncədən sifariş etməklə premiumdan iki ay pulsuz yararlanın
+                            </p>
+
+
+                        </div>
+
+                        <div>
+                            <input type="text" name="name" maxlength="500" class="form-control mb-3"
+                                   placeholder="Adınızı daxil edin" required>
+                            <input type="text" name="name" maxlength="500" class="form-control"
+                                   placeholder="Adınızı daxil edin" required>
+                        </div>
+
+                        <button class="btn mali-btn bg-green mt-5" id="formBTN" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-wrapper">
+    <div class="mobile-onboarding">
+        <div class="title-mobile-area">
+            <div>
+                <div class="myfixed-header d-flex justify-content-between align-items-center">
+                    <div class="logo-area">
+                        <img src="assets/images/maliapp-logo.svg">
+                    </div>
+                    <ul class="header-mobile-right d-flex align-items-center">
+                        <div class="mobile-navbar">
+                            <div class="menu-buttons">
+                                <a class="menu"><img src="assets/images/menu.svg"></a>
+                                <a class="close-menu hidden"><img src="assets/images/close-menu.svg"></a>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+
+                <div class="mobile-content-body">
+                    <nav>
+                        <ul class="mobile-sidenav landing-sidenav mt-3 mb-4">
+                            <li onclick="changeMobileSections('functions')" class="">
+                                <a href="#" class="mbl-funk-text">
+                                    <span class="">Funksiyalar</span>
+                                    <ul class="mt-4">
+                                        <li>Əməliyyatlarınızı avtomatik <br> olaraq rəsmiləşdirin</li>
+                                        <li>Biznesinizə onlayn nəzarət edin</li>
+                                        <li>Anbarınızı onlayn idarə edin</li>
+                                        <li>Avtomatik elektron qaimə göndərin</li>
+                                        <li>Ödənişlərinizi onlayn qəbul edin</li>
+                                        <li>Vergi öhdəliyinizi tam dəqiq <br> hesablayın</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li onclick="changeMobileSections('teqdimat')" class="mt-4">
+                                <a href="#" class="mbl-funk-text">
+                                    <span class="">Təqdimat</span>
+                                </a>
+                            </li>
+                            <li onclick="changeMobileSections('prices')" class="mt-4">
+                                <a href="#" class="mbl-funk-text">
+                                    <span class="">Qiymət paketləri</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="mobile-content-section" id="teqdimat">
+
+                        <div class="mobile-img-panel">
+                            <video width="100%" height="100%" controls>
+                                <source src="./assets/images/Maliapp_az.mp4" type="video/mp4"/>
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+
+                        <div class="mbl-header-text">
+                            <p>
+                                Maliapp-ə <br> xoş gəldiniz
+                            </p>
+                        </div>
+
+                        <div class="mbl-lorem-text">
+                            <p>
+                                Maliapp mikro və kiçik sahibkarların <br> mühasibatlıq işlərini asanlaşdıran ən <br> müasir proqram təminatıdır.
+                            </p>
+                        </div>
+
+                        <button onclick="preOrder()" class="btn mali-btn bg-green" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+                    </div>
+
+                    <div class="mobile-content-section"  id="functions" style="display: none;">
+
+                        <div id="carouselExampleIndicators" class="mbl-carousel carousel slide" data-ride="carousel" data-interval="false" style="margin-top: 10px">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img  class="d-block" src="./assets/images/slider-img1.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Əməliyyatlarınızı avtomatik  olaraq rəsmiləşdirin
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            Əməliyyatlarınız əsasında formalaşan hesabatlar və statistik göstəricilər sayəsində
+                                            biznesinizin inkişafı üçün yeni fürsətlər aşkarlayın.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="./assets/images/slider-img2.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Biznesinizə onlayn nəzarət edin
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            Satış və alış əməliyyatlarınızı rəsmiləşdirmək üçün gərəkən sənədləri avtomatik şəkildə asanlıqla yaradın.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="./assets/images/slider-img3.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Anbarınızı onlayn idarə edin
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            İlkin anbar qalığını Maliapp-ə yükləyərək satış və alış əməliyyatlarınız əsasında anbarınızı avtomatik yeniləyin.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img  class="d-block" src="./assets/images/slider-img4.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Avtomatik elektron qaimə göndərin
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            Satışlarınız əsasında tərtib olunan elektron qaimələri vergi orqanına avtomatik göndərin.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img  class="d-block" src="./assets/images/slider-img5.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Ödənişlərinizi onlayn qəbul edin
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            Müştərilərinizə hesab-fakturalarınızı email üzərindən göndərərək ödənişlərinizi onlayn qaydada qəbul edin.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="./assets/images/slider-img6.svg" alt="First slide">
+                                    <div>
+                                        <p class="mbl-right-content-header">
+                                            Vergi öhdəliyinizi tam dəqiq hesablayın
+                                        </p>
+
+                                        <p class="mbl-right-content-text mb-5">
+                                            Vergi hesablayıcısı funksiyası sayəsində vergilərinizi qanunvericiliyə uyğun olaraq tam dəqiq hesablayın və ödəniş vaxtı gələndə bildiriş alın.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="preOrder()" class="btn mali-btn bg-green" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+
+                    </div>
+
+                    <div class="mobile-content-section"  id="prices" style="display: none;">
+
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="chosing-card nav nav-pills" id="pills-tab" role="tablist">
+                                        <li>
+                                            <a href="#premium2M" data-toggle="pill" class="nav-link active"
+                                               id="paketM-premium"
+                                               style="background-color: var(--main-color) !important;color: #f1f1f1;"
+                                               onclick="selectPaketM('premium')"
+                                            >Premium</a>
+                                        </li>
+                                        <li>
+                                            <a href="#free2M" data-toggle="pill" class="nav-link"
+                                               id="paketM-free"
+                                               onclick="selectPaketM('free')"> Pulsuz</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row tab-content d-flex">
+                                <div class="col-md-12 col-lg-10 tab-pane fade show active" id="premium2M"
+                                     role="tabpanel">
+
+                                    <div class="card">
+                                        <div class="packet-header d-flex flex-column">
+                                            <div class="color-green font-weight-bold">PREMIUM PAKET</div>
+                                            <div class="card-pricing">16 AZN <span class="font-14 text-muted">/
+                                                            Aylıq</span></div>
+                                            <div class="mt-2"><span class="color-green font-weight-bold">2 həftə
+                                                            pulsuz</span> sınaq
+                                                müddət</div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="packet-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Sənəd yaratmaq</div>
+                                                    </div>
+                                                    <p style="color: #24be92 !important; margin: 0 0 0 30px !important;">Limitsiz</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Hər növ vergilərin hesablanması</div>
+                                                    </div>
+                                                    <p style="color: #24be92 !important;">Limitsiz</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot statistikalarının izlənməsi</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 col-lg-10 tab-pane fade"  role="tabpanel" id="free2M">
+
+                                    <div class="card">
+                                        <div class="packet-header d-flex flex-column">
+                                            <div class="text-muted font-weight-bold">SADƏ PAKET</div>
+                                            <div class="card-pricing">Pulsuz</div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <div class="packet-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Sənəd yaratmaq</div>
+                                                    </div>
+                                                    <p style="margin: 0 0 0 30px !important; color: #24be92">Ayda 10 dəfə</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Hər növ vergilərin hesablanması</div>
+                                                    </div>
+                                                    <p style="margin: 0 !important; color: #24be92">Ayda 1 dəfə</p>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot statistikalarının izlənməsi</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/landing/green-tick.png"
+                                                             class="green-tick">
+                                                        <div>Uçot hesabatlarının çıxarılması</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <button onclick="preOrder()" class="btn mali-btn bg-green" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="mobile-confirmation-page">
+                    <div onclick="backToPage()" class="back-btn">
+                        <img src="./assets/images/right-arrow.svg" alt="" style="filter: invert(56%) sepia(91%) saturate(394%) hue-rotate(112deg) brightness(94%) contrast(79%); transform: rotate(180deg)">
+                    </div>
+                    <div class="main-tab-content" id="first-main-tabM">
+                        <div>
+                            <p class="mbl-advanced-content-header">
+                                Öncədən sifariş etməklə premiumdan iki ay <br> pulsuz yararlanın
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <input type="text" name="name" maxlength="500" class="form-control mb-3" placeholder="Adı, Soyad" required="">
+                            <input type="text" name="name" maxlength="500" class="form-control" placeholder="Emailinizi daxil edin" required="">
+                        </div>
+
+                        <button class="btn mali-btn bg-green mt-5" type="submit" style="width: 100%;">
+                            Öncədən sifariş et
+                        </button>
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/plugins/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    function changeMainTab(tabName, activeTab) {
+        //FOR BENEFIT NUMBER CHANGE class="active"
+        $("#myTabs").find('li').removeClass("active");
+        $(activeTab).addClass("active");
+
+        //FOR BENEFIT CONTENT CHANGE
+        $(".main-tab-left").fadeOut('fast').promise().done(function() {
+            $('#'+tabName+'-left').fadeIn("fast");
+        });
+
+        $(".main-tab-content").fadeOut('fast').promise().done(function() {
+            $('#'+tabName).fadeIn("fast");
+        });
+    }
+
+    function changeInnerTab(tabName) {
+        //FOR BENEFIT NUMBER CHANGE gozle huseyn yazir nese+
+        let nextIndex = $('.inner-tab:visible').index();
+        console.log(nextIndex);
+        if (tabName==='next'){
+            nextIndex= nextIndex+1;
+            if (nextIndex >= $(".inner-tab").length){
+                nextIndex=0;
+            }
+        }
+        else if(tabName==='previous'){
+            nextIndex= nextIndex-1;
+            if (nextIndex <= -1){
+                nextIndex = $(".inner-tab").length-1;
+            }
+        }
+
+        // console.log($('.main-tab-content .inner-tab')[nextIndex].outerHTML());
+
+        $(".inner-tab").fadeOut('fast').promise().done(function() {
+            $('.main-tab-content .inner-tab').eq(nextIndex).fadeIn("fast");
+        });
+    }
+</script>
+
+<script>
+    function selectPaket(val) {
+        $('#paket-premium').css('background-color', '#f7f9fc')
+        $('#paket-free').css('background-color', '#f7f9fc')
+        $('#paket-premium').css('color', '#000000')
+        $('#paket-free').css('color', '#000')
+        $('#paket-' + val).css('background-color', 'var(--main-color)')
+        $('#paket-' + val).css('color', '#f1f1f1')
+    }
+
+    function selectPaketM(val) {
+        $('#paketM-premium').css('background-color', '#f7f9fc')
+        $('#paketM-free').css('background-color', '#f7f9fc')
+        $('#paketM-premium').css('color', '#000000')
+        $('#paketM-free').css('color', '#000')
+        $('#paketM-' + val).css('background-color', 'var(--main-color)')
+        $('#paketM-' + val).css('color', '#f1f1f1')
+    }
+
+</script>
+
+<script>
+
+    $('.carousel').carousel({
+        interval: false,
+    });
+</script>
+
+<script>
+
+    function changeMobileSections(tabName) {
+        $(".mobile-content-section").fadeOut('fast').promise().done(function() {
+            $('#'+tabName).fadeIn("fast");
+        });
+
+
+        $('.title-mobile-area nav').css('display', 'none');
+
+
+        $('.menu-buttons .close-menu').addClass("hidden");
+        $('.menu-buttons .menu').removeClass("hidden");
+
+        // $('.menu-buttons .close-menu').fadeOut('fast').promise().done(function() {
+        //   $('.menu-buttons .menu').fadeIn('fast');
+        // });
+    }
+
+
+    var mobileMenu = $('.menu-buttons .menu');
+
+    mobileMenu.click(function(){
+        $('.title-mobile-area nav').css('display', 'block');
+    })
+
+    $('.close-menu').click(function () {
+        $('.title-mobile-area nav').css('display', 'none');
+    })
+
+
+    var titleMobileArea = $('.mobile-content-body');
+    var mobileConfirmation = $('.mobile-confirmation-page');
+
+    function preOrder() {
+        titleMobileArea.css('display', 'none');
+        mobileConfirmation.css('display', 'block');
+    }
+
+    function backToPage(){
+        mobileConfirmation.css('display', 'none');
+        titleMobileArea.css('display', 'block');
+    }
+
+
+
+    function changeMainTab(tabName, activeTab) {
+        //FOR BENEFIT NUMBER CHANGE class="active"
+        $("#myTabs").find('li').removeClass("active");
+        $(activeTab).addClass("active");
+
+        //FOR BENEFIT CONTENT CHANGE
+        $(".main-tab-left").fadeOut('fast').promise().done(function() {
+            $('#'+tabName+'-left').fadeIn("fast");
+        });
+
+        $(".main-tab-content").fadeOut('fast').promise().done(function() {
+            $('#'+tabName).fadeIn("fast");
+        });
+    }
+
+</script>
+
+
+</body>
+</html>

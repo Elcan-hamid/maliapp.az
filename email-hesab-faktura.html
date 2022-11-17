@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mali App</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            outline: none !important;
+        }
+        body {
+            background-image: linear-gradient(to bottom, rgba(250, 251, 252, 0) 26%, #fafbfc);
+            overflow-x: hidden;
+            font-size: 14px;
+            color: #09101a;
+        }
+        .container {    
+            padding: 0 50px;
+        }
+        .bg-green{
+            background-color: #24be92;
+        }
+        .color-green{
+            color: #24be92;
+        }
+        .font-16{
+            font-size: 16px;
+        }
+        .font-wei-500{
+            font-weight: 500;
+        }
+        .font-wei-600{
+            font-weight: 600;
+        }
+        .text-muted{
+            color: #8a97a8 !important;
+        }
+        .incomeBuyer {
+            border-radius: 8px;
+            padding: 20px 0;
+        }
+        .cashFlowLine {
+            border-bottom: 1px solid #e9f1f2;
+        }
+        .pdf-container {
+            height: 100vh;
+            width: 100%;
+        }
+        .email-content{
+            padding: 59px 90px 45.8px 70px;
+            min-height: 633px;
+            margin: 0 auto;
+        }
+        .email-name{
+            font-size: 25px !important;
+        }
+        .email-btn button{
+            padding: 29px 0;
+            border: none;
+            margin-top: 50px;
+            margin-bottom: 120px;
+        }
+        .footer .powered{
+            font-size: 17px;
+        }
+        .footer .powered img{
+            width: 120px;
+        }
+        .footer .copyright{
+            font-size: 16px;
+        }
+        @media (max-width: 768px){
+            .email-content{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .container{
+                padding: 0 20px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1200px){
+            .container{
+                padding: 0 20px;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .email-content{
+                width: 850px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="pdf-container py-5">
+    <div class="container">
+        <div class="email-content bg-white d-flex flex-column">
+
+            <h3 class="email-name font-wei-600">Yeni hesab-faktura</h3>
+            <div>
+                <span class="font-wei-500">#12345678</span>
+            </div>
+
+            <div class="from-email font-16 cashFlowLine py-4">
+            	<div class="text-muted">From <span class="color-green font-wei-600">Sanan Isakhan</span></div>
+            	<div>sananisakhan@gmail.com</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-white incomeBuyer py-4 mt-3">
+                        <div class="cashFlowContent font-16">
+                            <div class="d-flex justify-content-between font-weight-bold pt-4 pb-3 cashFlowLine">
+                                <span>Hesab-fakturanın tarixi</span>
+                                <span>5 Yanvar, 2021</span>
+                            </div>
+                            <div class="d-flex justify-content-between font-weight-bold py-3 cashFlowLine">
+                                <span>Cəmi məbləğ</span>
+                                <span>1000.00 AZN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="email-btn font-16">
+            	<button class="btn bg-green w-100 text-white font-wei-600">Hesab-fakturaya bax</button>
+            </div>
+
+            <div class="footer d-flex justify-content-between align-items-center mt-auto">
+                <div class="powered">
+                    <span class="text-muted mr-2 font-wei-500">Powered by:</span>
+                    <img src="assets/images/maliapp-logo.svg">
+                </div>
+                <div class="copyright">
+                    <div class="text-muted">© 2021 MaliApp Financial Inc.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

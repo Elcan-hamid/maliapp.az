@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mali App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+    <div class="sidenav">
+        <div class="menu-logo">
+            <a href=""><img src="../assets/images/maliapp-logo.svg"></a>
+        </div>
+        <div class="navbar-menu">
+            <div class="side-menu">
+                <ul>
+                    <li class="menu-link">
+                        <a href="statistika.html" class="menu-item">
+                            <img src="../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+                            <span class="ml-2">Statistika</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="alis-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+                            <span class="ml-2">Alış fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="hesab-faktura.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesab-fakturalar</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="muqavileler.html" class="menu-item">
+                            <img src="../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+                            <span class="ml-2">Müqavilələr</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="vergi.html" class="menu-item">
+                            <img src="../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+                            <span class="ml-2">Vergi hesablayıcısı</span>
+                        </a>
+                    </li>
+                    <li class="menu-link  menu-link-active">
+                        <a href="./hesabatlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+                            <span class="ml-2">Hesabatlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li class="menu-link">
+                        <a href="ayarlar.html" class="menu-item">
+                            <img src="../assets/images/sidebar/setting.svg" class="sidebar-svg">
+                            <span class="ml-2">Ayarlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="pb-5">
+        <div class="title-area d-flex justify-content-between">
+            <div class="section-title d-flex justify-content-between">
+                <h4 class="title">Pul vəsaitlərinin hərəkəti</h4>
+            </div>
+            <ul class="header-right d-flex">
+                <li class="nav-item dropdown notification_dropdown">
+                    <a class="nav-link bell ai-icon my-3" role="button">
+                        <img src="../assets/images/bell.svg">
+                        <div class="pulse-css rounded-circle"></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <ul class="list-unstyled">
+                            <li class="dropdown-item d-flex mt-4">
+                                <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                    🎉
+                                </div>
+                                <div class="ml-4">
+                                    <div>MaliApp yeniləndi!</div>
+                                    <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                    <div class="text-muted">05.01.2020</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item d-flex mt-4">
+                                <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                    <img src="../assets/images/notify-hesab.svg">
+                                </div>
+                                <div class="ml-4">
+                                    <div>Hesab-faktura</div>
+                                    <div>12345678 nömrəli hesab -faktura gecikir</div>
+                                    <div class="text-muted">05.01.2020</div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown header-profile">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                        <div class="avatar-img d-flex">
+                            <p class="text-white font-weight-bold">FA</p>
+                            <span class="mt-3 ml-2 changeArrowHover">Fuad Aliyev</span>
+                            <img src="../assets/images/bottom-arrow.svg" class="ml-3 mb-3 rotateImgHover">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="" class="dropdown-item ai-icon">
+                            <p>Ayarlar</p>
+                        </a>
+                        <a href="" class="dropdown-item ai-icon">
+                            <p class="text-danger">Hesabdan çıxış</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="title-mobile-area">
+            <div class="">
+                <div class="fixed-header d-flex justify-content-between align-items-center">
+                    <div class="logo-area">
+                        <img src="../assets/images/maliapp-logo.svg">
+                    </div>
+                    <ul class="header-mobile-right d-flex align-items-center">
+                        <li class="nav-item dropdown notification_dropdown mr-2">
+                            <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+                                <img src="../assets/images/bell.svg">
+                                <div class="pulse-css rounded-circle"></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <ul class="list-unstyled">
+                                    <li class="dropdown-item d-flex mt-4">
+                                        <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                            🎉
+                                        </div>
+                                        <div class="ml-4">
+                                            <div>MaliApp yeniləndi!</div>
+                                            <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                            <div class="text-muted">05.01.2020</div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item d-flex mt-4">
+                                        <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                            <img src="../assets/images/notify-hesab.svg">
+                                        </div>
+                                        <div class="ml-4">
+                                            <div>Hesab-faktura</div>
+                                            <div>12345678 nömrəli hesab-faktura gecikir</div>
+                                            <div class="text-muted">05.01.2020</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </li>
+
+                        <div class="mobile-navbar">
+                            <div class="menu-buttons">
+                                <a class="menu"><img src="../assets/images/menu.svg"></a>
+                                <a class="close-menu hidden"><img src="../assets/images/close-menu.svg"></a>
+                            </div>
+                        </div>
+                        
+                    </ul>
+                </div>
+                <nav>
+                    <div class="avatar-img changeArrowHover d-flex" style="border-bottom: 1px solid #f2f2f2;padding-bottom: 20px;">
+                        <p class="text-white font-weight-bold">FA</p>
+                        <span class="mt-3 ml-2">Fuad Aliyev</span>
+                    </div>
+                    <ul class="mobile-sidenav mt-3 mb-4">
+                        <li class="menu-link">
+                            <a href="statistika.html" class="menu-item">
+                                <img src="../assets/images/sidebar/statistic.svg" class="sidebar-svg">
+                                <span class="ml-2">Statistika</span>
+                            </a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="alis-faktura.html" class="menu-item">
+                                <img src="../assets/images/sidebar/sebet.svg" class="sidebar-svg">
+                                <span class="ml-2">Alış fakturalar</span>
+                            </a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="hesab-faktura.html" class="menu-item">
+                                <img src="../assets/images/sidebar/hesab.svg" class="sidebar-svg">
+                                <span class="ml-2">Hesab-fakturalar</span>
+                            </a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="muqavileler.html" class="menu-item">
+                                <img src="../assets/images/sidebar/muqavile.svg" class="sidebar-svg">
+                                <span class="ml-2">Müqavilələr</span>
+                            </a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="vergi.html" class="menu-item">
+                                <img src="../assets/images/sidebar/vergi.svg" class="sidebar-svg">
+                                <span class="ml-2">Vergi hesablayıcısı</span>
+                            </a>
+                        </li>
+                        <li class="menu-link menu-active">
+                            <a href="hesabatlar.html" class="menu-item">
+                                <img src="../assets/images/sidebar/hesabat.svg" class="sidebar-svg">
+                                <span class="ml-2">Hesabatlar</span>
+                            </a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="ayarlar.html" class="menu-item">
+                                <img src="../assets/images/sidebar/setting.svg" class="sidebar-svg">
+                                <span class="ml-2">Ayarlar</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="color-red font-wei-500 font-16">Hesabdan çıxış</a>
+                </nav>
+            </div>
+            <div class="section-title">
+                <h3 class="title font-22">Pul vəsaitlərinin hərəkəti</h3>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between bg-white incomeBuyer px-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Tarixdən</label>
+                            <div class="dateArrow">
+                                <input type="date" name="" id="" class="changeArrowEl">
+                                <img src="../assets/images/bottom-arrow.svg" class="rotateImgEl">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label>Tarixədək</label>
+                            <div class="dateArrow">
+                                <input type="date" name="" id="" class="changeArrowEl">
+                                <img src="../assets/images/bottom-arrow.svg" class="rotateImgEl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center pr-3">
+                        <a href="./menfeet-zerer-hesabati-PDF.html" class="pdf font-15 font-wei-600">
+                            <img src="../assets/images/reports/download.svg" alt="" class="mr-2">
+                            PDF Yüklə
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="incomeBuyerCosts incomeBuyer d-flex flex-row align-items-center bg-white px-4">
+                    <div class="currency-icon bg-green mr-3">
+                        <img src="../assets/images/reports/star.svg" alt="">
+                    </div>
+                    <p class="d-flex flex-column">
+                        <span class="font-wei-600">$ 350.52</span>
+                        <span class="text-gray font-15">Alınan pul vəsaitləri</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="incomeBuyerCosts incomeBuyer d-flex flex-row align-items-center bg-white px-4">
+                    <div class="currency-icon bg-red mr-3">
+                        <img src="../assets/images/reports/corner-arrow.svg" alt="">
+                    </div>
+                    <p class="d-flex flex-column">
+                        <span class="font-wei-600">$ 350.52</span>
+                        <span class="text-gray font-15">Xərclənən pul vəsaitləri</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="incomeBuyerCosts incomeBuyer d-flex flex-row align-items-center bg-white px-4">
+                    <div class="currency-icon bg-orange mr-3">
+                        <img src="../assets/images/reports/rocket.svg" alt="">
+                    </div>
+                    <p class="d-flex flex-column">
+                        <span class="font-wei-600">$ 350.52</span>
+                        <span class="text-gray font-15">Net pul axınları</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-3">
+            <a href="./menfeet-zerer-hesabati-PDF.html" class="pdf-mobile font-15 font-wei-600 py-3">
+                <img src="../assets/images/reports/download.svg" alt="" class="mr-2">
+                PDF Yüklə
+            </a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bg-white income incomeBuyer py-5 px-5">
+                    <div class="cashFlowContent cash-line font-15">
+                        <div class="d-flex flex-row justify-content-between font-wei-500 py-1">
+                            <span>Əməliyyat fəaliyyətlərindən yaranan pul axınları</span>
+                            <span>$32.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">Satışlar</span>
+                            <span class="font-wei-500">$12.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">Satışın maya dəyəri üzrə xərclər</span>
+                            <span class="font-wei-500">$32.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">Kommersiya xərcləri</span>
+                            <span class="font-wei-500">$12.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">İnzibati xərclər</span>
+                            <span class="font-wei-500">$32.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">Sair əməliyyat xərcləri</span>
+                            <span class="font-wei-500">$32.000</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between py-1">
+                            <span class="text-gray">Vergi üzrə xərclər </span>
+                            <span class="font-wei-500">$32.000</span>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-between font-wei-500 py-4 cashFlowLine">
+                            <span>Əməliyyat fəaliyyətlərindən net pul axınları</span>
+                            <span>$32.000</span>
+                        </div>
+
+                        <div class="py-4 cashFlowLine">
+                            <div class="font-wei-500">İnvestisiya fəaliyyətlərindən yaranan pul axınları
+                            </div>
+                            <div class="d-flex flex-row justify-content-between py-1">
+                                <span class="text-gray">Əmlak alışı</span>
+                                <span class="font-wei-500">$32.000</span>
+                            </div>
+                        </div>
+                        <div class="py-4 cashFlowLine">
+                            <div class="font-wei-500 py-1">Maliyyə fəaliyyətlərindən yaranan pul axınları
+                            </div>
+                            <div class="d-flex flex-row justify-content-between py-1">
+                                <span class="text-gray">Maliyyə xərcləri</span>
+                                <span class="font-wei-500">$12.000</span>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between py-1">
+                                <span class="text-gray">Dividend ödənişləri</span>
+                                <span class="font-wei-500">$32.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="totalAmount font-wei-500 d-flex justify-content-between align-items-center py-3 alert-gray">
+                        <span>Net pul axınları</span>
+                        <span>$ 22.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        //input date value
+
+        const dateValue = document.querySelectorAll('.dateArrow input');
+        for (let i = 0; i < dateValue.length; i++) {
+            dateValue[i].value = '2020-01-13';
+        }
+    </script>
+    <script src="../assets/js/arrow.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/invoice.js"></script>
+    <script src="../assets/js/purchase.js"></script>
+    <script src="../assets/js/live-search.js"></script>
+    <script src="../assets/js/arrow.js"></script>
+
+
+</body>
+
+</html>

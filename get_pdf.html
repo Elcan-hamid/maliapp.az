@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="az">
+    <head>
+        <title>Title</title>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style> 
+		@page {
+            size: A4;
+            margin: 1cm;
+        }
+		@font-face {
+			font-family: Roboto; 
+			src: "https://maliapp.az/static/assets/fonts/Roboto-Regular.ttf";
+		} 
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none !important;
+		}
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6 {
+			margin-bottom: 0.5rem;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+		h4, .h4 {
+		font-size: 1.5rem;
+		}
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		body {
+			background-color: #fafbfc;
+			overflow-x: hidden;
+			font-size: 13px;
+			color: #09101a;
+			font-family: "Roboto", sans-serif; 
+		}
+		.text-muted {
+			color: #6c757d !important;
+		}
+		
+		.bg-lightgreen { background-color: #e6fff8;; }
+		.bg-cyan { background-color: #f5f9fa;; }
+		.bg-orange { background-color: #ffad3d; }
+		.bg-blue { background-color: #3db4ff; }
+		.bg-purple { background-color: #8853ff; }
+		.bg-pink { background-color: #d050ef; }
+
+		.font-16 { font-size: 16px; }
+
+		.font-15 { font-size: 14px; }
+
+		.font-14 { font-size: 13px !important; }
+		
+		.font-weight-bold {
+		font-weight: 700 !important;
+		}
+
+		.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.justify-content-start {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+.up-border{
+	border-top: 1px solid #e9f1f2;
+	border-bottom: 1px solid #e9f1f2;
+}
+
+.table-borderless td {
+	position: relative;
+}
+
+.table-borderless thead{
+	color: #6f7782;
+}
+
+.table-borderless tbody tr {
+	box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	margin: 17.2px 0 117px 0;
+}
+
+.table-borderless input {
+	height: 48px;
+	border-radius: 8px;
+	border: solid 1px #ecf1f4;
+}
+
+.footer .powered img{
+	width: 100px;
+}
+.total-amount {
+	padding: 13px 36px 4px 24px;
+	border-radius: 5px;
+	margin-top: 76px;
+}
+h4, p, h3, ul, li,span{
+	background-color: transparent;
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+		</style> 
+    </head>
+    <body>
+
+
+    <div class="modall-content bg-white d-flex flex-column">
+				<div class="d-flex justify-content-between">
+					<h4>Alış-faktura</h4>
+					<p>#{{ alisfaktura.code }}</p>
+				</div>
+
+				<h3 class="name">{{ alisfaktura.author.name }} {{ alisfaktura.author.surname }}</h3>
+				<p class="text-muted">{{ alisfaktura.author.sirketin_unvani }}</p>
+				<hr class="bg-lightgreen my-5">
+
+				<ul class="font-14 font-weight-bold">
+					<li><span class="text-muted">Hesab-faktura:</span> #{{alisfaktura.alif_fakturanin_nomresi}}</li>
+					<li><span class="text-muted">Başlama tarixi:</span> {{ alisfaktura.baslangic_tarixi }}</li>
+					<li><span class="text-muted">Bitmə tarixi:</span> {{ alisfaktura.bitme_tarixi }}</li>
+				</ul>
+
+				<table class="table table-borderless font-wei-500">
+					<thead class="bg-cyan">
+						<tr>
+							<td style="width: 40%">Mal, iş xidmət və s. əlavə edin</td>
+							<td>Miqdarı</td>
+							<td>Qiyməti</td>
+						</tr>
+					</thead>
+					<tbody>
+						{% for i in alisfaktura.mallar.all %}
+							<tr>
+								<td>{{ i.malin_adi }}</td>
+								<td>{{ i.miqdar }} ədəd</td>
+								<td>{{i.valyuta}} {{ i.vahidin_qiymeti }}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+
+				<div class="total-amount bg-cyan d-flex justify-content-between">
+					<p>Cəmi məbləğ:</p>
+					<h4>{{ alisfaktura.cemi_mebleg }} AZN</h4>
+				</div>
+
+				<div class="footer d-flex justify-content-between mt-auto">
+					<div class="powered" style="overflow: visible;height: 80px;">
+						<span class="text-muted mr-2">Powered by:
+							<img src="http://maliapp.az/static/assets/images/data.png" style="width: auto; height: 20px;">
+						</span>
+					</div>
+					<div class="copyright" style="text-align: right;">
+						<div class="text-muted">© 2021 MaliApp Financial Inc.</div>
+					</div>
+				</div>
+			</div>
+
+
+    
+    </body>
+</html>

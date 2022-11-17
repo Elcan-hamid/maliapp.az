@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mali App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+
+	<header class="landing-page-header d-flex align-items-center">
+        <div class="container-fluid" style="width: 90%;">
+            <div class="row d-flex justify-content-between">
+                <div class=" d-flex align-items-center">
+                    <a href="/">
+                        <img src="./assets/images/maliapp-logo.svg" alt="Mali App Logo">
+                    </a>
+                </div>
+                <div class="menu-container">
+                    <ul class="main-menu d-flex align-items-center justify-content-center">
+                        <li><a href="index.html">Ana səhifə</a></li>
+                        <li><a href="index.html#aboutUs">Haqqımızda</a></li>
+                        <li><a href="index.html#pricePackages">Qiymət paketləri</a></li>
+                        <li class="active-menu-link"><a href="support.html">Dəstək</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center" data-toggle="modal" data-target="#signUp">
+                    <button class="free-trial">Pulsuz sına</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="title-mobile-area">
+        <div class="">
+            <div class="fixed-header d-flex justify-content-between align-items-center">
+                <div class="logo-area">
+                    <img src="assets/images/maliapp-logo.svg">
+                </div>
+                <ul class="header-mobile-right d-flex align-items-center">
+                    <li class="nav-item dropdown notification_dropdown mr-2">
+                        <a class="nav-link bell ai-icon my-3" role="button" data-toggle="dropdown">
+                            <img src="assets/images/bell.svg">
+                            <div class="pulse-css rounded-circle"></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="list-unstyled">
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #e4e9f0;">
+                                        🎉
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>MaliApp yeniləndi!</div>
+                                        <div>Yeni xidmətlər üçün səhifəni yeniləyin</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item d-flex mt-4">
+                                    <div class="notify-icon rounded-circle" style="background-color: #ff5853;">
+                                        <img src="assets/images/notify-hesab.svg">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>Hesab-faktura</div>
+                                        <div>12345678 nömrəli hesab-faktura gecikir</div>
+                                        <div class="text-muted">05.01.2020</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+
+                    <div class="mobile-navbar">
+                        <div class="menu-buttons">
+                            <a class="menu"><img src="assets/images/menu.svg"></a>
+                            <a class="close-menu hidden"><img src="assets/images/close-menu.svg"></a>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </div>
+            <nav>
+                <ul class="mobile-sidenav landing-sidenav mt-3 mb-4">
+                    <li class="menu-link">
+                        <a href="index.html" class="menu-item">
+                            <span class="ml-2">Ana səhifə</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="index.html#aboutUs" class="menu-item">
+                            <span class="">Haqqımızda</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="index.html#pricePackages" class="menu-item">
+                            <span class="ml-2">Qiymət paketləri</span>
+                        </a>
+                    </li>
+                    <li class="menu-link menu-active">
+                        <a href="support.html" class="menu-item">
+                            <span class="ml-2">Dəstək</span>
+                        </a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="blog.html" class="menu-item">
+                            <span class="ml-2">Blog</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="support-section">
+        <div class="support-title">
+            <div class="container">
+                <p class="text-muted">
+                    <a href="index.html">Ana səhifə</a>
+                    <img src="assets/images/landing/right-green.svg" class="mx-2">
+                    Dəstək
+                </p>
+                <h3 class="font-30">Dəstək</h3>
+            </div>
+        </div>
+
+        <div class="container support-content-container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4">
+                    <img src="./assets/images/landing/support.png" alt="" class="img w-100">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4">
+                    <div class="support-content">
+                        <h4 class="font-wei-600">MaliApp V.2.5 artıq istifadəyə verildi! 🎉</h4>
+                        <span class="text-muted">05.01.2020</span>
+                        <p class="pt-4">
+                            We redesigned the navigation to make the platform more powerful, easy and scalable for the
+                            new features that we are developing. We added a new Sidebar that is now the primary
+                            navigation of the platform. We also added a clients search, available on every page on the
+                            top nav, so you can easily find your clients from everywhere.
+                        </p>
+                        <p class="pt-4 pb-3 text-muted">
+                            A new feature that we developed with this update is called <a href="">Other Revenue</a>. You
+                            can now easily
+                            track all your eventual extra revenue and check them in the dashboard.
+                        </p>
+                        <p class="text-muted">
+                            <span class="d-flex">Other improvements:</span>
+                            Added support for floating points duration for invoices and proposals (3.5 days/hrs/…)
+                            Responsive improvements for tablets and smartphones
+                            Small bugs fix and improvements
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container support-content-container">
+            <h4 class="text-center font-wei-600 my-5">Video təlimatlar</h4>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4">
+                    <div class="blog-image-container d-flex justify-content-center align-items-center">
+                        <div class="play-icon d-flex justify-content-center align-items-center">
+                            <img src="assets/images/landing/play-green.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4 mt-3">
+                    <div class="blog-content">
+                        <h4 class="font-wei-600">
+                            <a href="single-blog.html">Hesabatı necə yaratmalı?</a>
+                        </h4>
+                        <span class="text-muted font-16">05.01.2020</span>
+                        <p class="pt-4 pb-5">
+                            We redesigned the navigation to make the platform more powerful, easy and scalable for the
+                            new features that we are developing. We added a new Sidebar that is now the primary
+                            navigation of the platform…
+                        </p>
+                        <a href="single-blog.html" class="color-green font-wei-600 font-15 mr-2">Ətraflı oxu </a>
+                        <img src="./assets/images/arrow-right-green.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container support-content-container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4">
+                    <div class="blog-image-container d-flex justify-content-center align-items-center">
+                        <div class="play-icon justify-content-center align-items-center">
+                            <img src="assets/images/landing/play-green.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4 mt-3">
+                    <div class="blog-content">
+                        <h4 class="font-wei-600">
+                            <a href="single-blog.html">Hesabatı necə yaratmalı?</a>
+                        </h4>
+                        <span class="text-muted font-16">05.01.2020</span>
+                        <p class="pt-4 pb-5">
+                            We redesigned the navigation to make the platform more powerful, easy and scalable for the
+                            new features that we are developing. We added a new Sidebar that is now the primary
+                            navigation of the platform…
+                        </p>
+                        <a href="single-blog.html" class="color-green font-wei-600 font-15 mr-2">Ətraflı oxu </a>
+                        <img src="./assets/images/arrow-right-green.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container support-content-container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4">
+                    <div class="blog-image-container d-flex justify-content-center align-items-center">
+                        <div class="play-icon justify-content-center align-items-center">
+                            <img src="assets/images/landing/play-green.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-4 mt-3">
+                    <div class="blog-content">
+                        <h4 class="font-wei-600">
+                            <a href="single-blog.html">Hesabatı necə yaratmalı?</a>
+                        </h4>
+                        <span class="text-muted font-16">05.01.2020</span>
+                        <p class="pt-4 pb-5">
+                            We redesigned the navigation to make the platform more powerful, easy and scalable for the
+                            new features that we are developing. We added a new Sidebar that is now the primary
+                            navigation of the platform…
+                        </p>
+                        <a href="single-blog.html" class="color-green font-wei-600 font-15 mr-2">Ətraflı oxu </a>
+                        <img src="./assets/images/arrow-right-green.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="support-accordians">
+        <div class="container">
+            <div class="d-flex justify-content-center pb-4">
+                <h4 class="font-wei-600">Ən çox verilən suallar</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-link d-none d-md-flex font-wei-500 font-15">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" data-toggle="pill" href="#stat" role="tab" aria-selected="true">Statistika</a>
+                          <a class="nav-link" data-toggle="pill" href="#purch" role="tab" aria-selected="false">Alışlar</a>
+                          <a class="nav-link" data-toggle="pill" href="#sales" role="tab" aria-selected="false">Satışlar</a>
+                          <a class="nav-link" data-toggle="pill" href="#agree" role="tab" aria-selected="false">Müqavilələr</a>
+                          <a class="nav-link" data-toggle="pill" href="#taxes" role="tab" aria-selected="false">Vergi hesablayıcısı</a>
+                          <a class="nav-link" data-toggle="pill" href="#report" role="tab" aria-selected="false">Hesabatlar</a>
+                        </div>
+                    </div>
+                    <div class="select_wrap select_border select-pills d-md-none mb-4">
+                      <ul class="default_option d-flex align-items-center">
+                          <li>
+                              <div class="option">
+                                <p>Statistika</p>
+                              </div>
+                          </li>
+                      </ul>
+                      <ul class="select_ul ul-pills nav nav-pills" id="pills-tab" role="tablist">
+                          <li>
+                              <div class="option" data-pill="stat">
+                                Statistika
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option" data-pill="purch">
+                                Alışlar
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option" data-pill="sales">
+                                Satışlar
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option" data-pill="agree">
+                                Müqavilələr
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option" data-pill="taxes">
+                                Vergi hesablayıcısı
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option" data-pill="report">
+                                Hesabatlar
+                              </div>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="stat">
+                            <div class="accordian-container mb-4">
+                                <div class="changeArrowEl py-4" data-toggle="collapse" data-target="#support1" aria-expanded="false"
+                                aria-controls="company">
+                                <div class="container d-flex justify-content-between align-items-center">
+                                    <div class="d-flex font-wei-600">
+                                        <span>How many websites I can add using the same account?</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/images/top-arrow.svg" class="rotateImgEl">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="collapse show container" id="support1">
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit purus nisi, eu
+                                        accumsan dui rutrum pulvinar. Phasellus est nisi, gravida quis ornare vitae, fringilla vel elit.
+                                        Fusce at mattis elit. Aenean semper elit sed quam iaculis, ut lacinia nunc cursus. Duis ex
+                                        felis,
+                                        faucibus quis tincidunt quis, sodales eu enim.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="accordian-container my-4">
+                                <div class="changeArrowEl py-4" data-toggle="collapse" data-target="#support2" aria-expanded="false"
+                                    aria-controls="company">
+                                    <div class="container d-flex justify-content-between align-items-center">
+                                        <div class="d-flex font-wei-600">
+                                            <span>How many websites I can add using the same account?</span>
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/arrow-bottom.svg" class="rotateImgEl">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="collapse container" id="support2">
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit purus nisi, eu
+                                        accumsan dui rutrum pulvinar. Phasellus est nisi, gravida quis ornare vitae, fringilla vel elit.
+                                        Fusce at mattis elit. Aenean semper elit sed quam iaculis, ut lacinia nunc cursus. Duis ex
+                                        felis,
+                                        faucibus quis tincidunt quis, sodales eu enim.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="accordian-container my-4">
+                                <div class="changeArrowEl py-4" data-toggle="collapse" data-target="#support3" aria-expanded="false"
+                                    aria-controls="company">
+                                    <div class="container d-flex justify-content-between align-items-center">
+                                        <div class="d-flex font-wei-600">
+                                            <span>How often will I be billed?</span>
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/arrow-bottom.svg" class="rotateImgEl">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="collapse container" id="support3">
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit purus nisi, eu
+                                        accumsan dui rutrum pulvinar. Phasellus est nisi, gravida quis ornare vitae, fringilla vel elit.
+                                        Fusce at mattis elit. Aenean semper elit sed quam iaculis, ut lacinia nunc cursus. Duis ex
+                                        felis,
+                                        faucibus quis tincidunt quis, sodales eu enim.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="accordian-container my-4">
+                                <div class="changeArrowEl py-4" data-toggle="collapse" data-target="#support4" aria-expanded="false"
+                                    aria-controls="company">
+                                    <div class="container d-flex justify-content-between align-items-center">
+                                        <div class="d-flex font-wei-600">
+                                            <span>What is an impression?</span>
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/arrow-bottom.svg" class="rotateImgEl">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="collapse container" id="support4">
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit purus nisi, eu
+                                        accumsan dui rutrum pulvinar. Phasellus est nisi, gravida quis ornare vitae, fringilla vel elit.
+                                        Fusce at mattis elit. Aenean semper elit sed quam iaculis, ut lacinia nunc cursus. Duis ex
+                                        felis,
+                                        faucibus quis tincidunt quis, sodales eu enim.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="purch"></div>
+                        <div class="tab-pane fade" id="sales"></div>
+                        <div class="tab-pane fade" id="agree"></div>
+                        <div class="tab-pane fade" id="taxes"></div>
+                        <div class="tab-pane fade" id="report"></div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </div>
+
+    <div class="your-comments mt-5">
+        <div class="container">
+            <div class="comment-title d-flex flex-column text-center">
+                <h4 class="font-wei-600">Təklif və ya iradın var? Çəkinmə!</h4>
+                <p class="text-muted mt-2">Müraciətinizi ünvanlayın və əməkdaşlarımız ən qısa zamanda<br>
+                    sizin suallarınızı cavablandırsın!</p>
+            </div>
+            <div class="py-5">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-3">
+                            <div class="d-flex flex-column">
+                                <label for="">Ad və Soyad</label>
+                                <input type="text" name="" id="" placeholder="Ad və Soyadınızı daxil edin">
+                                <label for="" class="pt-3">E-mail</label>
+                                <input type="email" name="" id="" placeholder="E-mailinizi qeyd edin">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-3">
+                            <div class="d-flex flex-column">
+                                <label for="">Müraciətiniz</label>
+                                <textarea name="" id="" placeholder="Müraciətinizi yazın"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center pt-5 font-16">
+                            <button>Göndər <img src="assets/images/right-arrow.svg" alt="" class="ml-2"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-area d-flex flex-row justify-content-between align-items-center">
+                <div class="footer-logo">
+                    <img src="./assets/images/maliapp-logo.svg" alt="">
+                    <span class="font-15 text-muted ml-3">© 2021 MaliApp Financial Inc.</span>
+                </div>
+                <div class="social-icons text-muted">
+                    <a href="#">
+                        <img src="assets/images/landing/facebook.svg">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/landing/twitter.svg">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/landing/youtube.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <div class="modal left fade" id="signUp" role="dialog" aria-labelledby="signUpLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="nav flex-sm-column flex-row">
+                            <button type="button" data-dismiss="modal" class="closeSignUpModal">
+                                <img src="./assets/images/close.svg" alt="">
+                            </button>
+                            <div class="sign-up-content">
+                                <h3>Yeni hesab yaradın 🎉</h3>
+                                <p class="font-15 text-muted pb-3">Yeni hesab yaradın və maliyyə işlərinizi onlayn şəkildə asanlıqla idarə edin!</p>
+                                <form action="" method="POST" class="needs-validation" novalidate>
+                                    <div class="d-flex flex-column">
+                                        <div class="input">
+                                            <label>E-mail</label>
+                                            <input class="form-control" type="text" name="email" id="email" placeholder="E-mailinizi daxil edin" required>
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        <div class="input position-relative">
+                                            <label class="password">Şifrə</label>
+                                            <input id="password-field1" type="password" class="form-control mt-2" name="password" placeholder="Şifrənizi daxil edin" required>
+                                            <img src="assets/images/landing/eye-icon.svg" toggle="#password-field1" class="toggle-password field-icon">
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="input">
+                                            <label>Ad və soyad</label>
+                                            <input class="form-control" type="text" name="" id="name"
+                                                placeholder="Adınızı və soyadınızı daxil edin" required>
+                                            <div class="invalid-feedback">
+                                                Bu xana boş qala bilməz
+                                            </div>
+                                        </div>
+
+                                        <label class="pt-4">
+                                            <input type="radio">
+                                            <a href="" class="color-green"> İstifadəçi şərtlərini</a> oxudum və qəbul edirəm
+                                        </label>
+                                        <button type="submit">Hesab yarat</button>
+                                        <p class="text-center font-15 text-muted">Artıq hesabınız var? <a href="" class="color-green login">Daxil olun</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/arrow.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+	
+</body>
+</html>
